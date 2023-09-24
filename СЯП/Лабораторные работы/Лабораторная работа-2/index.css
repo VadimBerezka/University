@@ -1,0 +1,18 @@
+* {
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+    font-size: large;
+
+}
+
+table{
+    border: 1px;
+   background-color: red;
+}
+
+td {
+    width: 20px;
+}

@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\University\ОАиП\Лабораторные работы\Лабораторная работа-4\Berezka-2\Berezka-2\main.cpp(5,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Berezka-2.vcxproj -> C:\University\ОАиП\Лабораторные работы\Лабораторная работа-4\Berezka-2\x64\Debug\Berezka-2.exe

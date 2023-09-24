@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+  color: blue;
+  font-family: Comic Sans MS;
+}
+
+figure {
+  background: #ffff7f;
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+}
+
+aside {
+  float: right;
+  font-family: Comic Sans MS;
+  color: blue;
+}
+
+nav {
+  text-align: center;
+}
+
+section {
+  font-size: large;
+  color: blueviolet;
+  font-family: Georgia;
+}
+footer {
+font-size: large;
+font-family:Verdana;
+color: darkblue;
+
+}
+.list {
+  color:tomato;
+  font-family: cursive;
+  justify-content: center;
+  display: flex;
+}

@@ -1,0 +1,12 @@
+.wrap {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+span {
+    width: 150px;
+}
