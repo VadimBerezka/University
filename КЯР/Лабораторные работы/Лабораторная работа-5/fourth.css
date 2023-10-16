@@ -1,0 +1,31 @@
+.chess {
+    margin: 0 auto;
+    border-spacing: 0;
+    margin-top: 70px;
+}
+
+th:first-child {
+    width: 20px;
+}
+
+th:last-child {
+    width: 20px;
+}
+
+th {
+    background: lightgray;
+    text-align: center;
+    empty-cells: hide;
+    border: 1px solid black;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.chess tr:nth-child(odd) td:nth-child(even),
+.chess tr:nth-child(even) td:nth-child(odd) {
+    background: black;
+}

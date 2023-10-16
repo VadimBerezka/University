@@ -1,0 +1,15 @@
+.table1,
+.table2{
+    border: solid 1px black;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 100px;
+}
+
+.table1 tr:nth-child(3n){
+    background: lightcoral;
+}
+
+.table2 td:nth-child(2n + 3){
+    background: lightgreen;
+}

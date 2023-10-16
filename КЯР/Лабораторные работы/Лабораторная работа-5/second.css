@@ -1,0 +1,43 @@
+td:nth-child(2n) {
+    background: #00BBFF;
+}
+
+td:nth-child(3n) {
+    background: purple;
+}
+
+td:nth-child(4n) {
+    background: green;
+}
+
+table {
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    border-spacing: 0;
+}
+
+th,
+td {
+    border: solid 1px rgb(96, 82, 82);
+    empty-cells: hide;
+}
+
+.num1,
+.num2 {
+    color: black;
+}
+
+.num1::after {
+    content: '\21D1';
+}
+
+.num2::after {
+    content: '\21D4';
+}
+
+.title {
+    color: black;
+    font-size: 1.2em;
+    text-align: center;
+}

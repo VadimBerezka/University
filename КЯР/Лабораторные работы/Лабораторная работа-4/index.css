@@ -1,0 +1,66 @@
+.container {
+    display: inline-flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.border1 {
+    border: 8px solid rgb(255, 0, 0);
+    padding: 10px;
+}
+
+.border2 {
+    border: 8px dashed rgb(0, 255, 0);
+    padding: 10px;
+}
+
+.border3 {
+    border: 8px dotted rgb(0, 0, 255);
+    padding: 10px;
+}
+
+.border4 {
+    border: 8px double rgb(0, 255, 255);
+    padding: 10px;
+}
+
+.border5 {
+    border: 8px groove rgb(255, 0, 255);
+    padding: 10px;
+}
+
+.border6 {
+    border: 8px inset rgb(255, 255, 0);
+    padding: 10px;
+}
+
+.border7 {
+    border: 8px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+span {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    background: #FFA500;
+    border: 2px solid #FF4500;
+}
+
+.text1 {
+    width: 400px;
+    text-align: center;
+    border: 2px solid #FF7F50;
+}
+
+.text2 {
+    border: 5px solid red;
+    border-radius: 20px/40px;
+    text-shadow: rgba(0, 0, 0, .5);
+    box-shadow: inset 2px 2px 8px 8px rgba(0, 0, 0, .5);
+    overflow: auto;
+}
+
+.text3 {
+    border: solid #FF6347;
+}

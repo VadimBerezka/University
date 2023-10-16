@@ -29,7 +29,7 @@
             font-family: 'Caveat';
             margin-bottom: 0;
             text-align: center;
-
+            font-weight: bold;
             text-transform: capitalize;
             font-size: 45px;
         }
@@ -51,17 +51,33 @@
             letter-spacing: 200%;
             font-size: 20px;
         }
-.aa::first-letter{
-    
-    font-size: 45px;
-    color: white;
-    background-color: hsla(275, 100%, 10%, 1);
-}
 
-.list {
+        .list {
+            font-size: 25px;
+            font-family: 'Comfortaa';
+        }
 
-}
+        .title-list {
+            margin-bottom: 0;
+        }
 
+        ol li {
+            list-style-type: none;
+            counter-increment: item;
+        }
+
+        ol li:before {
+            content: counter(item, upper-roman) ".";
+            color: blue;
+        }
+
+
+        .text-p:first-letter {
+            font-weight: bold;
+            font-size: 45px;
+            color: white;
+            background-color: hsla(275, 100%, 10%, 1);
+        }
     </style>
 
 </head>
@@ -75,7 +91,7 @@
         Для начала нужно разобраться!
     </h2>
 
-    <p class="aa">
+    <p class="text-p">
         Киберспорт – понятие,
         которое относительно не так давно,
         стало применяться в повседневной жизни. Поэтому для начала нужно разобраться,
@@ -86,7 +102,7 @@
         зародившимися еще в Древней Греции (бег, борьба и т.д.) и вот такими новыми течениями.
     </p>
 
-    <p class="aa">
+    <p class="text-p">
         Т.е., проще говоря, спорт— организованная по определённым правилам деятельность людей, состоящая в сопоставлении
         их физических и/или интеллектуальных способностей, а также подготовка к этой деятельности и межличностные
         отношения, возникающие в её процессе.
@@ -96,7 +112,7 @@
     <h2>
         Спорт
     </h2>
-    <p class="aa">
+    <p class="text-p">
         Сам спорт как вид деятельности появился еще до нашей эры, он представляет собой специфический род физической или
         интеллектуальной активности, совершаемой с целью соревнования, а также целенаправленной подготовки к ним путём
         разминки, тренировки. В сочетании с отдыхом, стремлением постепенного улучшения физического здоровья, повышения
@@ -105,23 +121,23 @@
         совершенствования физико-психических характеристик человека.
     </p>
     <h2 class="title-list">
-
+        5 вселенных турнира "Игры будущего" 2023
     </h2>
-    <ol type="1" class="list">
+    <ol class="list">
         <li>
-
+            Sports challenge;
         </li>
         <li>
-            
+            Battle challenge;
         </li>
         <li>
-            
+            AR/VR challenge;
         </li>
         <li>
-            
+            E-motions challenge;
         </li>
         <li>
-            
+            Technically assisted challenge.
         </li>
     </ol>
 </body>
