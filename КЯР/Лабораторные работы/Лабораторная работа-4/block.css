@@ -1,27 +1,27 @@
-.paragraph1 {
+.p-1 {
     border-top: solid orange;
     border-left: solid brown;
     border-right: solid darkblue;
     border-bottom: solid yellow;
 }
 
-.paragraph2 {
+.p-2 {
     border-right: solid #007BA7;
     border-left: solid #007BA7;
 }
 
-.paragraph3 {
+.p-3 {
     border-top: solid rgb(229 43 80);
     border-left: dashed aqua;
     border-right: dashed aqua;
     border-bottom: dashed aqua;
 }
 
-.paragraph4 {
+.p-4 {
     border: 1px dotted orange;
 }
 
-.paragraph5 {
+.p-5 {
     border-bottom: 2px solid darkblue;
     border-top: 2px solid darkblue;
     border-left: dashed rgb(106, 23, 8);
@@ -29,26 +29,26 @@
     ;
 }
 
-.paragraph6 {
+.p-6 {
     border: double #B3446C;
 }
 
-.paragraph7 {
+.p-7 {
     border-top: 1px dashed #808000;
     border-bottom: 3px solid #FF7518;
 }
 
-.paragraph8 {
+.p-8 {
     border-left: double #CC7722;
     border-bottom: double #CC7722;
 }
 
-.paragraph9 {
+.p-9 {
     border-top: ridge #B5A642;
     border-right: ridge #B5A642;
 }
 
-.paragraph10 {
+.p-10 {
     border-left: 5px dotted rgb(0, 40, 0);
     border-right: 5px dotted rgb(0, 40, 0);
     border-bottom: 5px dotted rgb(0, 40, 0);
