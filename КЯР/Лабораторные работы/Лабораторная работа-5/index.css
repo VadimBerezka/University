@@ -2,3 +2,14 @@ table{
     border-collapse:collapse;
     margin: 0 auto;
 }
+tr:nth-child(1n+1){
+    background-color: lightgoldenrodyellow;
+}
+
+tr th:first-child{
+    background-color: lightblue;
+}
+
+table tr:first-child{
+    background-color: lightgreen; 
+}

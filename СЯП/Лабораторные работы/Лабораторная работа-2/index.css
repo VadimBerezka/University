@@ -14,3 +14,11 @@ table, td {
 td {
     width: 20px;
 }
+
+button {
+    background-color: coral;
+    color: crimson;
+    font-size: large;
+    border-radius: 10px;
+
+}

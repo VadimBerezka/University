@@ -28,11 +28,11 @@ td {
     color: black;
 }
 
-.num1::after {
+.num1:after {
     content: '\21D1';
 }
 
-.num2::after {
+.num2:after {
     content: '\21D4';
 }
 
