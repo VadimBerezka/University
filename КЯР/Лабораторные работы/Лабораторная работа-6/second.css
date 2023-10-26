@@ -1,0 +1,25 @@
+.imgs {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+figure {
+    background-color:rgb(187, 13, 48);
+    border-radius: 10px;
+    text-align: center;
+    color:lightskyblue;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    width: 355px;
+    font-size: 25px;
+}
+
+img {
+    width: 355px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+body {
+    background-color:darkslateblue;
+}

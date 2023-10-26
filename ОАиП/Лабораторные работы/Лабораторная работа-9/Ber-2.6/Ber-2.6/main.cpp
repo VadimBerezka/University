@@ -13,7 +13,7 @@ int main() {
     while (true) {
         if (abs(a - b) > 2 * e) {
             x = (a + b) / 2;
-            cout << "x=" << x << endl;
+            // cout << "x=" << x << endl;
             if ((cos(x) + x - 7) * (cos(a) + a - 7) <= 0) {
                 b = x;
             }
