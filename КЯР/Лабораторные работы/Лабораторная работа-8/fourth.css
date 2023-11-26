@@ -1,0 +1,68 @@
+.container {
+    display: inline-flex;
+}
+
+#belstu,
+#it,
+#pim,
+#htit {
+    padding: 5px 5px 0 5px;
+}
+
+.box {
+    display: inline-flex;
+    border: 1px solid black;
+    width: 180px;
+    height: 25px;
+    padding: 10px;
+   
+}
+
+.box div {
+    margin: auto;
+}
+
+.box a {
+    background: url(facultet.png) no-repeat 0 0;
+    width: 30px;
+    height: 30px;
+}
+
+.box:hover #img1 {
+    display: block;
+}
+
+.box:hover #img2 {
+    display: block;
+    background-position: 0 -30px;
+}
+
+.box:hover #img3 {
+    display: block;
+    background-position: 0 -60px;
+}
+
+.box:hover #img4 {
+    display: block;
+    background-position: 0 -90px;
+}
+
+.main {
+    display: none;
+    width: 202px;
+    text-align: center;
+}
+
+#it:hover .main {
+    display: block;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.link {
+    border: 1px solid black;
+    padding: 10px;
+}

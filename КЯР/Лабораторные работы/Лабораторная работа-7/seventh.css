@@ -1,0 +1,60 @@
+.container {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border: 1px solid black;
+    animation: block linear 5s infinite;
+}
+
+h1 {
+    text-align: center;
+    animation: title infinite 5s;
+}
+
+@keyframes title {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes block {
+    0% {
+        color: lightgreen;
+    }
+    10% {
+        color: lightblue;
+    }
+    20% {
+        color: lightcoral;
+    }
+    30% {
+        color: goldenrod;
+    }
+    40% {
+        color: lightpink;
+    }
+    50% {
+        color: lightseagreen;
+    }
+    60% {
+        color: lawngreen;
+    }
+    70% {
+        color: lemonchiffon;
+    }
+    80% {
+        color: aquamarine;
+    }
+    90% {
+        color: lightslategray;
+    }
+    100% {
+        color: lavender;
+    }
+}

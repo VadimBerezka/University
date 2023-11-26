@@ -1,9 +1,6 @@
-﻿Сборка начата 17.10.2023 12:09:10.
+﻿Сборка начата 31.10.2023 19:08:16.
 Уровень детализации журнала: Normal.     1>Проект "C:\University\ОАиП\Лабораторные работы\Лабораторная работа-8\Ber-6.2\Ber-6.2\Ber-6.2.vcxproj" в узле 2 (целевые объекты Build).
-     1>PrepareForBuild:
-         Создание каталога "C:\University\ОАиП\Лабораторные работы\Лабораторная работа-8\Ber-6.2\x64\Debug\".
-         Создание каталога "x64\Debug\Ber-6.2.tlog\".
-       InitializeBuildStatus:
+     1>InitializeBuildStatus:
          Создание "x64\Debug\Ber-6.2.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
          Обращение к "x64\Debug\Ber-6.2.tlog\unsuccessfulbuild".
        ClCompile:
@@ -21,4 +18,4 @@
     Предупреждений: 0
     Ошибок: 0
 
-Прошло времени 00:00:00.65
+Прошло времени 00:00:01.20

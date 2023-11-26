@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+}
+
+button {
+    padding: 10px 30px;
+    border: 0;
+    font-size: 15px;
+}
+
+#button1:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#button2:hover {
+    outline: 5px solid yellow;
+    border: 5px solid red;
+}
+
+#button3:hover {
+    border-top: 5px solid green;
+    border-bottom: 5px solid green;
+}
+
+#button4:hover {
+    border-left: 5px solid blue;
+    border-right: 5px solid blue;
+}
+
+#button5:hover {
+    background: radial-gradient(yellow 7%, magenta, rgb(246, 45, 246), blue, aqua 70%);
+}
+
+h1 {
+    animation: buttons 5s infinite;
+}
+
+@keyframes buttons {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 80%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

@@ -6,7 +6,7 @@ int main() {
 	for (int i = 0; i < 5; i++) {
 		if (x[i] < a) {
 			a = x[i];
-			c += (x[i] / 1 + x[i]);
+			c += (x[i] / (1 + x[i]));
 		}
 	}
 	c += a;

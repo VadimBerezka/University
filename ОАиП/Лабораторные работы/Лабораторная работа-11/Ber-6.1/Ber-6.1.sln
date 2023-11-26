@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ber-6.1", "Ber-6.1\Ber-6.1.vcxproj", "{142AFF2A-C060-471E-BE53-BCAACACAAA72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{142AFF2A-C060-471E-BE53-BCAACACAAA72}.Debug|x64.ActiveCfg = Debug|x64
+		{142AFF2A-C060-471E-BE53-BCAACACAAA72}.Debug|x64.Build.0 = Debug|x64
+		{142AFF2A-C060-471E-BE53-BCAACACAAA72}.Debug|x86.ActiveCfg = Debug|Win32
+		{142AFF2A-C060-471E-BE53-BCAACACAAA72}.Debug|x86.Build.0 = Debug|Win32
+		{142AFF2A-C060-471E-BE53-BCAACACAAA72}.Release|x64.ActiveCfg = Release|x64
+		{142AFF2A-C060-471E-BE53-BCAACACAAA72}.Release|x64.Build.0 = Release|x64
+		{142AFF2A-C060-471E-BE53-BCAACACAAA72}.Release|x86.ActiveCfg = Release|Win32
+		{142AFF2A-C060-471E-BE53-BCAACACAAA72}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B19980EB-DD53-4629-9B3D-9B1DBF8E2A9E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    background-color:beige;
+}
+
+.list {
+    width: 85%;
+    margin: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color:darkblue;
+
+}
+
+aside {
+    width: 15%;
+    border: 5px dashed darkblue;
+    padding: 20px;
+    height: 80px;
+}
+
+#a_1:link {
+    color: red;
+    text-decoration: none;
+}
+
+#a_2:link {
+    color: red;
+    text-decoration: none;
+}
+
+#a_3:link {
+    color: red;
+    text-decoration: none;
+}
+
+#a_4:link {
+    color: red;
+    text-decoration: none;
+}
+
+#a_1:visited {
+    color: #8B0000;
+}
+
+#a_2:visited {
+    color: #8B0000;
+}
+
+#a_3:visited {
+    color: #8B0000;
+}
+
+#a_4:visited {
+    color: #8B0000;
+}
+
+#a_1:hover {
+    color: green;
+}
+
+#a_2:hover {
+    color: green;
+}
+
+#a_3:hover {
+    color: green;
+}
+
+#a_4:hover {
+    color: green;
+}
+
+#a_1:active {
+    color: rgb(184, 134, 11);
+}
+
+#a_2:active {
+    color: rgb(184, 134, 11);
+}
+
+#a_3:active {
+    color: rgb(184, 134, 11);
+}
+
+#a_4:active {
+    color: rgb(184, 134, 11);
+}

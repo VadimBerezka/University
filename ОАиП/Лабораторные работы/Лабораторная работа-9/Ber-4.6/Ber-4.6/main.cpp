@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    double a = 4, b = 7, e = 0.0001, x;
+    double a = 2, b = 3, e = 0.0001, x;
     x = (a + b) / 2;
     if ((exp(x) - 3 - 1 / x) * (exp(a) - 3 - 1 / a) <= 0) {
         b = x;

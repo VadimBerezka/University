@@ -4,7 +4,6 @@ using namespace std;
 int main()
 {
     setlocale(LC_CTYPE, "Russian");
-    // Создание переменных
     const int maxSize = 100;
     int size, diff = 1, maxDiff = 1;
     int arr[maxSize] = { 1, 1, 2, 2, 3, 4, 4, 4, 5, 6, 7, 8, 8 };
@@ -22,7 +21,6 @@ int main()
             diff = 1;
         }
     }
-    // Вывод результата
     cout << "Наибольшее число подряд идущих одинаковых элементов: " << maxDiff;
     return 0;
 }

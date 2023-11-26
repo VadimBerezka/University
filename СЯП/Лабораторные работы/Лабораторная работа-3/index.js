@@ -8,17 +8,17 @@ const task1 = () => {
     const tri = 3 * Math.sin(9) + Math.log10(5) + s
     const cheture = 2 * Math.tan(5) + 6 - n + v12
     const arr = new Array(raz, dva, tri, cheture)
-    console.log('Array: ', arr)
+    console.log('Массив: ', arr)
 
     let max = Math.max(...arr)
     let maxIn = arr.indexOf(max)
     let min = Math.min(...arr)    
     let minIn = arr.indexOf(min)
     
-    console.log('Max number: ', max)
-    console.log('Max Index: ', maxIn)
-    console.log('Min number: ', min)
-    console.log('Min Index: ', minIn)
+    console.log('Максимальный элемент массива: ', max)
+    console.log('Индекс максимального элемента массива: ', maxIn)
+    console.log('Минимальный элемент массива: ', min)
+    console.log('Идекс минимального элемента массива: ', minIn)
 }
 
 const task3 = () => {
@@ -28,15 +28,15 @@ const task3 = () => {
 }
 
 const task4 = () => {
-    v = new Array();
-    v[0] = "pow";
-    v[1] = "pop";
-    v[2] = "push";
-    v[3] = "shift";
-    v[4] = "round";
-    v[5] = "floor";
-    v[6] = "slice";
-    v[7] = "sort";
+/*     massivchik = new Array();
+    massivchik[0] = "pow";
+    massivchik[1] = "pop";
+    massivchik[2] = "push";
+    massivchik[3] = "shift";
+    massivchik[4] = "round";
+    massivchik[5] = "floor";
+    massivchik[6] = "slice";
+    massivchik[7] = "sort";
 
     arr = new Array();
     arr[0] = "pop";
@@ -50,11 +50,36 @@ const task4 = () => {
     mat[0] = "pow";
     mat[1] = "round";
     mat[2] = "floor";
-    mat.push("min");
+    mat.push("min");    
 
-    console.log('Исходный массив: ', v)
+    console.log('Исходный массив: ', massivchik, 'Длина исходного массива', massivchik.length)
     console.log('Первый массив: ', arr, 'Длина первого массива: ', arr.length)
-    console.log('Второй массив: ', mat, 'Длина второго массива: ', mat.length)
+    console.log('Второй массив: ', mat, 'Длина второго массива: ', mat.length) */
+
+    let arr_met = [Math.pow, Array().pop, Array().push, Array().shift, Math.round, Math.floor, Array().slice, Array().sort]; 
+    let arr_Array_met = []; 
+    let arr_Math_met = []; 
+     
+    for (let i = 0; i < arr_met.length; i++ ){ 
+        if (Object.hasOwn(Math, arr_met[i].name)){ 
+            arr_Math_met.push(arr_met[i]) 
+        }  
+        else { 
+            arr_Array_met.push(arr_met[i]) 
+        } 
+    }   
+      
+    arr_Array_met.push(Array().concat); 
+    arr_Math_met.unshift(Math.min); 
+    
+    console.log(arr_met); 
+    console.log(arr_met.length); 
+    
+    console.log(arr_Math_met); 
+    console.log(arr_Math_met.length); 
+    
+    console.log(arr_Array_met); 
+    console.log(arr_Array_met.length);
     
 }
 
@@ -76,7 +101,8 @@ const task5 = () => {
 const task6 = () => {
     const date = new Date;
     document.write('<table style="background-color: pink;">')
-
+    document.write('<style>td {border: 1px solid #f00;}</style>')
+    
     document.write(`<tr><td>Год</td><td>${date.getFullYear()}</td></tr>`)
     document.write(`<tr><td>Месяц</td><td>${date.getMonth()+1}</td></tr>`)
     document.write(`<tr><td>День</td><td>${date.getDate()}</td></tr>`)
