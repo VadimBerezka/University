@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 задание</title>
+    <link rel="stylesheet" href="style2.css" media="(max-width: 1280px)">
+    <link rel="stylesheet" href="style3.css" media="(max-width: 1280px)">
+    <style>
+        @import url(style1.css) (max-width: 768px);
+
+        .conteiner {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .head p {
+            font-size: 25px;
+        }
+
+        .videos,
+        .text,
+        .audios {
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+            flex-flow: row wrap;
+            border: 1px solid black;
+            align-content: space-between;
+        }
+
+        .burger {
+            display: none;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+        }
+
+        .videos video {
+            width: 100%;
+        }
+
+        .photos img {
+            width: 250px;
+            height: 250px;
+        }
+
+        figure figcaption {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }   
+
+        @media (max-width: 480px) {
+            .conteiner {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .audios {
+                display: flex;
+                justify-content: center;
+            }
+
+            .head .burger {
+                display: block;
+            }
+
+            .head {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            figcaption {
+                color: red;
+            }
+        }
+
+        .photos {
+            display: flex;
+            flex-flow: row wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="head">
+        <div class="header">
+            <p>3 задание</p>
+        </div>
+        <div class="burger">
+            <p> &#8801 </p>
+        </div>
+    </div>
+
+
+    <div class="conteiner">
+
+        <div class="videos">
+            <video controls>
+                <source src="../video/AC Mirage.mp4" type="video/mp4" />
+            </video>
+
+            <video controls>
+                <source src="../video/Baldur's Gate 3.mp4" type="video/mp4" />
+            </video>
+
+            <video controls>
+                <source src="../video/Far Cry 6.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+
+        <div class="text">
+            <p>
+                Flexbox разметка в CSS даёт один из наиболее эффективных способов
+                расстановки, выравнивания и распределения места между элементами
+                внутри контейнера, даже если их размер неизвестен или динамичен
+                (собственно, по этому его и называют flex, от слова flexible, что
+                по-английски имеет двойственное значение — гибкий и уступчивый, что
+                очень сочетается с моделью поведения flexbox). Основной целью flexbox
+                является предоставление возможности изменения своих элементов по
+                ширине и высоте, для того, чтобы они максимально эффективно умещались
+                в доступном месте родительского контейнера, в частности — это удобно в
+                тех случаях, когда нужно соответствовать всем типам дисплеев устройств
+                и размерам экранов. Flex контейнер расширяет вложенные элементы для
+                того, чтобы заполнить доступное пространство или же урезает их, чтобы
+                избежать переполнения.
+            </p>
+        </div>
+
+        <div class="audios">
+            <audio controls>
+                <source src="../audio/AC Mirage.3gp" type="audio/mp3" />
+            </audio>
+
+            <audio controls>
+                <source src="../audio/BG3.m4a" type="audio/mp3" />
+            </audio>
+            
+            <audio controls>
+                <source src="../audio/far cry.m4a" type="audio/mp3" />
+            </audio>
+        </div>
+
+    </div>
+
+    <h1>Топ игры</h1>
+    <div class="photos">
+        <figure>
+            <img src="image/Detroit.jpg" alt="1">
+            <figcaption>Detroit</figcaption>
+        </figure>
+        <figure>
+            <img src="image/DOOM.jpg" alt="2">
+            <figcaption>DOOM</figcaption>
+        </figure>
+        <figure>
+            <img src="image/GTA5.jpg" alt="3">
+            <figcaption>GTA5</figcaption>
+        </figure>
+        <figure>
+            <img src="image/Jedi.jpg" alt="4">
+            <figcaption>Jedi</figcaption>
+        </figure>
+        <figure>
+            <img src="image/RDR2.jpg" alt="5">
+            <figcaption>RDR2</figcaption>
+        </figure>
+        <figure>
+            <img src="image/skyrim.jpg" alt="6">
+            <figcaption>Skyrim</figcaption>
+        </figure>
+        <figure>
+            <img src="image/Uncharted 4.jpg" alt="7">
+            <figcaption>Uncharted 4</figcaption>
+        </figure>
+        <figure>
+            <img src="image/witcher.jpg" alt="8">
+            <figcaption>The witcher</figcaption>
+        </figure>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа-7</title>
+</head>
+
+<body>
+    <form name="data">
+        <textarea>Факультет информационных технологий</textarea><br>
+        <input type="text" placeholder="Фамилия" name="fam"><br>
+        <input type="text" placeholder="Имя" name="im"><br>
+        Специальность<select name="sel">
+            <option value="ИСиТ">ИСиТ</option>
+            <option value="ПОИТ">ПОИТ</option>
+            <option value="ПОИБМС">ПОИБМС</option>
+            <option value="ДЭВИ">ДЭВИ</option>
+        </select><br>
+        Курс<br>
+        <input type="radio" name="kurs" value="1">1
+        <input type="radio" name="kurs" value="2">2
+        <input type="radio" name="kurs" value="3">3
+        <input type="radio" name="kurs" value="4">4 <br>
+        Предметы<br>
+        <input type="checkbox" class="check" value="ОИТ">ОИТ
+        <input type="checkbox" class="check" value="ОАП">ОАП
+        <input type="checkbox" class="check" value="История">История
+        <input type="checkbox" class="check" value="Физика">Физика
+        <input type="checkbox" class="check" value="Математика">Математика<br>
+        <input type="submit"> <input type="button" value="reset"><br>
+        <input type="button" value="Напечатать" onclick="subm()">
+    </form>
+
+    <script>
+        function subm() {
+            let fam = document.forms.data.fam.value
+            let spec = document.forms.data.sel.value
+            let kurs = document.forms.data.kurs.value
+            var mass = []
+            let subjects = document.querySelectorAll(".check")
+            for (var i = 0; i < subjects.length; i++) {
+                if (subjects[i].checked) {
+                    mass.push(subjects[i].value)
+                }
+            }
+            document.write(' Студент ' + fam + ' специальность ' + spec + ' курс ' + kurs + ' должен сдавать следующие предметы: ')
+            let ul = document.createElement("ul")
+            for (let i = 0; i < mass.length; i++) {
+                let tab = ul.appendChild(document.createElement("li")).innerHTML = subjects[i].value;
+                document.body.append(ul)
+            }
+            let select = document.createElement("select")
+            for (let i = 0; i < mass.length; i++) {
+                select.appendChild(document.createElement("option")).innerHTML = subjects[i].value;
+            }
+            document.body.append(select)
+        }
+    </script>
+</body>
+
+</html>

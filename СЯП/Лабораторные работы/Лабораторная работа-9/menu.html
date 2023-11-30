@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Меню</title>
+  <script src="script6.js"></script>
+</head>
+
+<body>
+  <style>
+    * {
+      margin: 0px;
+      user-select: none;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    ul#menu {
+      text-align: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul#menu li {
+      display: inline-block;
+    }
+
+    ul#menu li button {
+      color: #3e3e3e;
+      text-decoration: none;
+      padding: 10px 20px;
+      width: 100px;
+      height: 50px;
+    }
+
+    ul#menu li button:hover {
+      background-color: #555;
+      color: white;
+    }
+  </style>
+
+  <nav>
+    <ul id="menu">
+      <li><button id="gl" onclick="Vipadeniee('gl')">Главная</button></li>
+      <li><button id="on" onclick="Vipadeniee('on')">О нас</button></li>
+      <li><button id="us" onclick="Vipadeniee('us')">Услуги</button></li>
+      <li><button id="ko" onclick="Vipadeniee('ko')">Контакты</button></li>
+    </ul>
+  </nav>
+
+
+</body>
+
+</html>

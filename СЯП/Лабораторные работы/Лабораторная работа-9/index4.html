@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script4.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td colspan="4">
+                    <label for="color">Цвет графика</label>
+                    <select id="color" name="color">
+                        <option value="violet" disabled selected hidden>Фиолетовый</option>
+                        <option value="violet">Фиолетовый</option>
+                        <option value="red">Красный</option>
+                        <option value="green">Зелёный</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="sin" name="chart" value="sin">
+                    <label for="sin">sin(x)</label>
+                </td>
+                <td>
+                    <input type="radio" id="cos" name="chart" value="cos">
+                    <label for="cos">cos(x)</label>
+                </td>
+                <td>
+                    <input type="radio" id="x^2" name="chart" value="x^2">
+                    <label for="x^2">x^2</label>
+                </td>
+                <td>
+                    <input type="radio" id="x^3" name="chart" value="x^3">
+                    <label for="x^3">x^3</label>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+    <div><input type="button" value="Нарисовать график" onclick="drawChart()"></div>
+
+</body>
+
+</html>

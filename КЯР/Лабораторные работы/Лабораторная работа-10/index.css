@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    font-size: 25px;
+}
+
+.conteiner {
+    display: flex;
+    flex-flow: row;
+}
+
+.videos,
+.text,
+.audios {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    flex-flow: row wrap;
+    border: 1px solid black;
+    align-content: space-between;
+}
+
+.videos video {
+    width: 100%;
+}

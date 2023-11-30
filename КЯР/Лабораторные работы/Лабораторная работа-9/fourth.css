@@ -1,0 +1,46 @@
+.conteiner {
+    display: grid;
+    grid-template-columns: 90px 270px 180px;
+    grid-template-rows: 90px 180px 90px;
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "nav header header"
+        "nav article aside"
+        "footer footer footer";
+}
+
+body {
+    height: 100%;
+    margin: 50px;
+}
+
+header {
+    grid-area: header;
+    background-color: lime;
+}
+
+nav {
+    grid-area: nav;
+    background-color: lime;
+}
+
+a {
+    text-decoration: none;
+}
+
+article {
+    grid-area: article;
+    background-color: lime;
+}
+
+aside {
+    grid-area: aside;
+    background-color: lime;
+}
+
+footer {
+    grid-area: footer;
+    background-color: lime;
+}

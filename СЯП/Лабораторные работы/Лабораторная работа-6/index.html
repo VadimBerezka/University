@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form {
+            margin: 10px;
+            text-align: center;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form><input type="button" value="Открыть окно" onclick="kn1()"></form>
+    <form><input type="button" value="Закрыть окно" onclick="kn2()"></form>
+    <form><input type="button" value="Второе задание" onclick="kn3()"></form>
+    <script>
+
+        let crwin;
+
+        function kn1() {
+            crwin = window.open("vsevs", "pervoeokno","width=500,height=500");
+            crwin.document.write("Добрый день");
+        }
+
+        function kn2() {
+            crwin.close();
+        }
+
+        function kn3() {
+            let usa = navigator.userAgent;
+            let apv = navigator.appVersion;
+            let apn = navigator.appName;
+            let acn = navigator.appCodeName;
+            let pl = navigator.platform;
+            let jav = navigator.javaEnabled();
+            let wid = screen.width;
+            let heid = screen.height;
+            let cold = screen.colorDepth;
+            let hrf = location.href;
+            let pan = location.pathname;
+            let hst = location.host;
+
+            function func(name, value) {
+                document.write("<tr>");
+                document.write("<td>" + name + "</td>");
+                document.write("<td>" + value + "</td>");
+                document.write("</tr>");
+            }
+
+            document.write("<table border=1>");
+
+            func('Свойство', 'Значение');
+            func('userAgent', usa);
+            func('appVersion', apv);
+            func('appName', apn);
+            func('appCodeName', acn);
+            func('platform', pl);
+            func('javaEnabled', jav);
+            func('width', wid);
+            func('height', heid);
+            func('colorDepth', cold);
+            func('href', hrf);
+            func('pathname', pan);
+            func('host', hst);
+
+            document.write("</table>");
+        }
+
+    </script>
+</body>
+
+</html>
