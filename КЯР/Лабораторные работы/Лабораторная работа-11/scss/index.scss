@@ -1,0 +1,188 @@
+@import "./variables";
+@import "./extend.scss";
+@import "./mixin";
+@import "./func";
+
+body {
+    background-color: $backgr-main;
+
+}
+
+ul {
+    li {
+        display: inline;
+        margin-left: 40px;
+    }
+
+    a {
+        display: inline-block;
+        border: none;
+        padding: 20px 40px;
+        text-decoration: none;
+        color: $gold;
+    }
+}
+
+.nav {
+    display: $display-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.logo {
+    img {
+        width: 150px;
+        height: 100px;
+        margin-left: 20px;
+    }
+}
+
+
+
+
+.main {
+    display: inline-flex;
+    justify-content: space-between;
+    color:$gold; 
+}
+
+.text_img {
+    display: block;
+    float: left;
+    width: 66%;
+}
+
+.aside-menu {
+    display: block;
+    width: 33%;
+}
+
+.header1 {
+    @include mixin-flex;
+    background-color: $backgr-color;
+    color:$gold; 
+    font-size: 35px;
+}
+
+
+.header2 {
+    @include mixin-flex;
+    background-color: $backgr-color;
+    color:$gold; 
+    margin-top: $margin-top;
+    font-size: 35px;
+}
+
+.main_text {
+    display: $display-flex;
+    justify-content: space-between;
+    margin-top: $margin-top;
+}
+
+.text1,
+.text2,
+.text3 {
+    @include mixin-flex;
+    width: 250px;
+    height: 250px;
+    background-color: $backgr-color;
+    font-size: 24px;
+}
+
+.images {
+    @include flex-space;
+    flex-direction: row;
+    margin-top: $margin-top;
+}
+
+.images img {
+    width: 200px;
+    height: 180px;
+}
+
+
+
+
+
+.header3 {
+    @include mixin-flex;
+    align-items: center;
+    background-color: $backgr-color;
+    height: 40px;
+}
+
+.form {
+    background-color: $backgr-color;
+    height: 220px;
+    font-size: 1.1em;
+    color:$gold;
+    margin-bottom: 10px;
+}
+
+.header4 {
+    text-align: center;
+}
+
+label {
+    @extend %form-extend;
+}
+
+.butt {
+    background-color: $backgr-color;
+    color:$gold;
+}
+
+input {
+    background-color:$gold;
+}
+
+.block1,
+.block2 {
+    @include flex-space;
+}
+
+.block1 {
+    .first {
+        background-color: $backgr-color;
+    }
+}
+.block2 {
+    .second {
+        background-color: $backgr-color;
+    }
+}
+
+.block1 img,
+.block2 img {
+    width: 150px;
+    height: 120px;
+    margin-top: $margin-top;
+}
+
+.block1 div,
+.block2 div {
+    width: 40%;
+    margin-top: $margin-top;
+}
+
+
+
+.cont-inform {
+    display: $display-flex;
+    background-color: $backgr-color;
+    margin-top: 5px;
+    color: $gold;
+    font-size: 25px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+}
+
+h1 {
+    font-size: $header-font-size;
+}
+
+p {
+    font-size: set-text-font-size($header-font-size);
+}

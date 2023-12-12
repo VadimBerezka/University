@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style/second.xsl" type="text/xsl"?>
+
+<exams>
+    <title>Attestation</title>
+    <person>
+        <order>1</order>
+        <name>Саша</name>
+        <mark>3</mark>
+    </person>
+    <person>
+        <order>2</order>
+        <name>Макар</name>
+        <mark>1</mark>
+    </person>
+    <person>
+        <order>3</order>
+        <name>Тимур</name>
+        <mark>9</mark>
+    </person>
+    <person>
+        <order>4</order>
+        <name>Антон</name>
+        <mark>4</mark>
+    </person>
+    <person>
+        <order>5</order>
+        <name>Вика</name>
+        <mark>10</mark>
+    </person>
+    <person>
+        <order>6</order>
+        <name>Дайана</name>
+        <mark>7</mark>
+    </person>
+    <person>
+        <order>7</order>
+        <name>Катя</name>
+        <mark>5</mark>
+    </person>
+</exams>

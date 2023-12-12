@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style/xslt.xsl" type="text/xsl"?>
+
+<menu>
+    <title>Delicious!</title>
+    <element>
+        <burger>Бургер</burger>
+        <creator>Владимир Бургеретти</creator>
+        <year>1001 год</year>
+    </element>
+    <element>
+        <burger>Чизбургер</burger>
+        <creator>Тимур Черенок</creator>
+        <year>1678 год</year>
+    </element>
+    <element>
+        <burger>Биг-тейсти</burger>
+        <creator>Бадили the creator</creator>
+        <year>1252 год</year>
+    </element>
+</menu>

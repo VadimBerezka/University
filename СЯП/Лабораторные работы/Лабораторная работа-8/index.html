@@ -86,5 +86,11 @@
         col.style.border = "5px solid red "
     }
 
+
+    let select = document.createElement("select")
+    for (let i = 0; i < mass.length; i++) {
+        select.appendChild(document.createElement("option")).innerHTML = subjects[i].value
+    }
+    document.body.append(select)
 </script>
 </html>

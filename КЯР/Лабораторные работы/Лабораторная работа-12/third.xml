@@ -1,0 +1,22 @@
+<xs:schema
+xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:element name="body">
+ <xs:complexType>
+ <xs:sequence>
+	 <xs:element name="games" maxOccurs="unbounded">
+     	 <xs:element name="header" maxOccurs="unbounded">
+		</xs:element>
+		 <xs:complexType>
+			 <xs:sequence>
+				 <xs:element name="name" type="xs:string"/>
+				 <xs:element name="info" type="xs:string"/>
+				 <xs:element name="bg3" type="xs:string"/>
+				 <xs:element name="starwars" type="xs:string"/>
+                 <xs:element name="hogwarts" type="xs:string"/>
+			 </xs:sequence>
+		 </xs:complexType>
+      </xs:element>
+ </xs:sequence>
+ </xs:complexType>
+ </xs:element>
+</xs:schema>
