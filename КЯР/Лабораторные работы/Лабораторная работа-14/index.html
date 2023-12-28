@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="650" height="200">
+        <defs>
+        <path  id="line" d="M50,200 Q175,75 600,200" 
+        style="stroke:rgb(6, 6, 122); stroke-width:3; fill:none;"/>
+        </defs>
+        <use xlink:href="#line"/>
+
+        <text x="225">
+            <textPath xlink:href="#line" fill="red" font-size="36px">
+               Vadim      
+            </textPath> 
+        </text> 
+        
+    </svg>
+</body>
+</html>

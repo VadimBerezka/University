@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="index.xsl" type="text/xsl"?>
+
+<main>
+    <game>
+        <name>Baldur’s Gate 3</name>
+        <cost>60 $</cost>
+        <year>2018</year>
+    </game>
+
+    <game>
+        <name>Star Wars Jedi: Survivor</name>
+        <cost>40 $</cost>
+        <year>2022</year>
+    </game>   
+
+    <game>
+        <name>Hogwarts Legacy</name>
+        <cost>80 $</cost>
+        <year>2023</year>
+    </game>
+</main>

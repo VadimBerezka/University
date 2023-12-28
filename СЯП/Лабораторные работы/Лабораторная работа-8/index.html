@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторная работа-8</title>
+    <script src="index.js" type="text/javascript"></script>
     <style>
         p {
             float: left;
@@ -20,8 +21,11 @@
             text-align: center;
         }
 
-        div {
-            float: right;
+        .right {
+            float:right;
+        }
+        .left {
+            float: left;
         }
 
         img.third {
@@ -31,66 +35,22 @@
 </head>
 
 <body>
-    <p class="first" onmouseover="f1()" ondblclick='f6()'>Задание 1</p>
-    <p class="second" style="font-size: medium;" onclick="f2()">Задание 2</p>
-    <p id="thd" onclick="f4()">Задание 4</p>
-    <div>
-        <img src="top-1.jpg" class="third" style="width: 200px; height: 200px ;" onmouseover="f51()" onmouseout="f52()">
+    <div class="right">
+        <p class="first" onmouseover="function1()" ondblclick="function6()">Задание 1</p>
+
+        <p class="second" style="font-size: medium;" onclick="function2()">Задание 2</p>
+    
+        <p id="thd" onclick="function4()">Задание 4</p>
+    </div>
+    
+    <div class="left">
+        <img src="top-1.jpg" class="third" style="width: 200px; height: 200px ;" onmouseover="function5_1()" onmouseout="function5_2()">
         <figcaption>Задание 5</figcaption>
     </div>
-    <div id="zad3" style="text-align: center;">
-        <img id="fst" src="top-2.jpg"style="width: 600px; height: 400px ;" onclick="f3()">
-        <figcaption>Задание 3</figcaption>
-    </div>
+<div id="zad3" style="text-align: center;">
+    <img id="fst" src="top-2.jpg"style="width: 600px; height: 400px ;" onclick="function3()">
+    <figcaption>Задание 3</figcaption>
+</div>
 
 </body>
-<script>
-    // Задание 1
-    function f1() {
-        let col = document.querySelector(".first")
-        col.style.color = "blue"
-    }
-
-    // Задание 2
-    function f2() {
-        let size = document.querySelector(".second")
-        size.style.fontSize = "large"
-    }
-
-    // Задание 3 
-    function f3() {
-        let image1 = '<img id="fst" src="jerry.jpg" onclick="f4()">'
-        document.getElementById('fst').src = 'top-3.jpg'
-    }
-
-    // Задание 4
-    function f4() {
-        let thd = document.getElementById('thd')
-        thd.innerHTML = '<img src="top-4.jpg" style="width: 400px; height: 400px ;">'
-    }
-
-    // Задание 5 фазы всплытия событий в dom 
-    function f51() {
-        let razmer = document.querySelector(".third")
-        razmer.style.width = "600px"
-    }
-
-    function f52() {
-        let razmer = document.querySelector(".third")
-        razmer.style.width = "200px"
-    }
-
-    // Задание 6
-    function f6() {
-        let col = document.querySelector(".first")
-        col.style.border = "5px solid red "
-    }
-
-
-    let select = document.createElement("select")
-    for (let i = 0; i < mass.length; i++) {
-        select.appendChild(document.createElement("option")).innerHTML = subjects[i].value
-    }
-    document.body.append(select)
-</script>
 </html>

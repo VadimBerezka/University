@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Задание 1</title>
+</head>
+<body>
+    <script>
+        function massiv() {
+            return Math.round(Math.random() * 10)
+        }
+
+        let length = parseInt(prompt("Введите длину массива"))
+        var arr = new Array()
+
+        for (let i = 0; i < length; i++) {
+            arr[i] = massiv()
+            console.log("Элемент массива " + arr[i])
+        }  
+
+        let num = parseFloat(prompt("Введите n-й элемент"))
+        let check = arr.includes(num, fromIndex = 1)
+
+        if (check) {
+            document.write("Элемент имеется в массиве")
+        } else {
+            document.write("Элемент не имеется в массиве")
+        }
+    </script>
+</body>
+</html>
+

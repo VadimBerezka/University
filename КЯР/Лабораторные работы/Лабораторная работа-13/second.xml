@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="second.xsl" type="text/xsl"?>
+<students>
+    <student>
+        <spec>ИСиТ</spec>
+        <lastname>Берёзка</lastname>
+        <firstname>Вадим</firstname>
+        <grup>3</grup>
+        <mark>9</mark>
+    </student>
+    <student>
+        <spec>ПИ</spec>
+        <lastname>Юрасов</lastname>
+        <firstname>Назар</firstname>
+        <grup>7</grup>
+        <mark>4</mark>
+    </student>
+    <student>
+        <spec>ПИ</spec>
+        <lastname>Жучкевич</lastname>
+        <firstname>Екатерина</firstname>
+        <grup>6</grup>
+        <mark>9</mark>
+    </student>
+    <student>
+        <spec>ИСиТ</spec>
+        <lastname>Сасим</lastname>
+        <firstname>Илья</firstname>
+        <grup>3</grup>
+        <mark>1</mark>
+    </student>
+</students>

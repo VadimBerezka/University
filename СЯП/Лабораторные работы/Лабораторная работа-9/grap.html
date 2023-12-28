@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <form name="fenster" class="forma2">
+        <input type="radio" name="s" value="1">y=x^2<br>
+        <input type="radio" name="s" value="2">y=x^3<br>
+        <input type="radio" name="s" value="3">y=sin(x)<br>
+        <input type="radio" name="s" value="4">y=cos(x)<br>
+        <canvas id="c1" width="500px" height="500px"
+            style="position:absolute; margin-top: -50px; margin-left: 150px;">
+        </canvas>
+        <select id='select' name='color' class="forma1">
+            <option id='violet' value="violet">фиолетовый</option>
+            <option id='red' value="red">красный</option>
+            <option id='green' value="green">зеленый</option>
+            <option id='blue' value="blue">синий</option>
+        </select><br>
+        <input type="button" onclick='grap()' value='График' style="margin-top: 10px;">
+    </form>
+    <script>
+        function grap() {
+            var canvas = document.getElementById('c1')
+            var ctx = canvas.getContext('2d')
+            var func = Number(document.forms.fenster.s.value)
+            var col = document.forms.fenster.color.value
+            switch (func) {
+
+                case 1: {
+                    var x = 0
+                    var move = setInterval(
+                        function draw2() {
+                            let y_2 = 200 - 0.08 * Math.pow(x - 200, 2)
+                            x += 0.5
+                            ctx.fillStyle = col
+                            ctx.fillRect(x, y_2, 3, 3)
+                        }, 1)
+                     break
+                }
+
+                case 2: {
+                    var x = 0
+                    var move = setInterval(
+                        function draw3() {
+                            let y_3 = 200 - 0.002 * Math.pow(x - 200, 3)
+                            x += 0.1
+                            ctx.fillStyle = col
+                            ctx.fillRect(x, y_3, 3, 3)
+                        }, 1)
+                     break
+                }
+
+                case 3: {
+                    var x = 0
+                    var move = setInterval(
+                        function drawSin() {
+                            let y_sin = 200 + 10 * Math.sin(0.1 * (x - 200))
+                            x += 0.1
+                            ctx.fillStyle = col
+                            ctx.fillRect(x, y_sin, 3, 3)
+                        }, 1)
+                    break
+                }
+
+                case 4: {
+                    var x = 0
+                    var move = setInterval(
+                        function drawCos() {
+                            let y_cos = 200 + 10 * Math.cos(0.1 * (x - 200))
+                            x += 0.1
+                            ctx.fillStyle = col
+                            ctx.fillRect(x, y_cos, 3, 3)
+                        }, 1)
+                     break
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

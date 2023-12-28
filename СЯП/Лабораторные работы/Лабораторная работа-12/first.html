@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 1</title>
+</head>
+<body>
+
+<script>
+    let map = new Map()
+    map.set('1', '+375111111111')
+    map.set('2', '+375222222222')
+    map.set('3', '+375333333333')
+    map.set('4', '+375444444444')
+    map.set('5', '+375555555555')
+
+    let choice = prompt("Введите число")
+
+    function function1() {
+        let key = choice
+        let a = map.get(key)
+
+        alert(`Номер телефона: ${a}`)
+    }
+    function1()
+</script>
+
+</body>
+</html>

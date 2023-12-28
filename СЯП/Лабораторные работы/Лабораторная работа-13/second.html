@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Задание 2</title>
+</head>
+<body>
+    <script>
+        function massiv() {
+            return Math.floor(Math.random() * 10)
+        }
+
+        let length = parseInt(prompt("Введите длину массива"))
+        var arr = new Array()
+
+        for (let i = 0; i < length; i++) {
+            arr[i] = massiv()
+            console.log("Элемент массива " + arr[i])
+        }  
+
+        arr.unshift(NaN)
+        console.log(arr.includes(NaN))
+        console.log(arr.indexOf(NaN))
+
+    </script>
+</body>
+</html>

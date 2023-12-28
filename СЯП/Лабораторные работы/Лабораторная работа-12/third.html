@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Задание 3</title>
+</head>
+<body>
+    
+    <script>
+            
+        let familiya
+        let imya
+        let otchestvo
+        let proto = {
+            familiya: 'Berezka',
+            imya: 'Vadim',
+            otchestvo: 'Sergeevich'
+        }
+
+        document.write("До: " + proto.familiya + " " + proto.imya + " " + proto.otchestvo + `<br>`)
+
+        let proto2 = Object.create(proto)
+        proto2.imya = "Vadimka"
+        document.write("После: " + proto2.familiya + " " + proto2.imya + " " + proto2.otchestvo)
+
+    </script>
+</body>
+</html>
+

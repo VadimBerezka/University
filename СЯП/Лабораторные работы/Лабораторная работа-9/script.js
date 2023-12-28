@@ -1,33 +1,28 @@
-"use strict"
-
 function Drop() { 
-    console.log("Starting movement"); 
-    let shouldMove = true; 
+    let shouldMove = true
  
-    let elem = document.getElementById(event.target.id); 
+    let elem = document.getElementById(event.target.id) 
  
-    let shiftX = event.pageX - elem.getBoundingClientRect().left - scrollX; 
-    let shiftY = event.pageY - elem.getBoundingClientRect().top - scrollY; 
+    let shiftX = event.pageX - elem.getBoundingClientRect().left
+    let shiftY = event.pageY - elem.getBoundingClientRect().top 
  
     document.onmousemove = function(event) { 
         if (shouldMove) { 
-            console.log("Movement"); 
-            elem.style.left = event.pageX - shiftX + 'px'; 
-            elem.style.top = event.pageY - shiftY + 'px'; 
+            elem.style.left = event.pageX - shiftX + 'px' 
+            elem.style.top = event.pageY - shiftY + 'px' 
         } 
     } 
  
-    document.onmouseup = function() { 
-        console.log("Finishing movement"); 
-        shouldMove = false; 
+    document.onmouseup = function() {  
+        shouldMove = false
     } 
  
     elem.ondragstart = function() { 
-        return false; 
+        return false 
     } 
  
     elem.ondragend = function() { 
-        return false; 
+        return false 
     } 
  
 }

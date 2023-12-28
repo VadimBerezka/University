@@ -1,0 +1,34 @@
+.text-1 {
+  color: blue;
+  font-family: Arial;
+  font-size: 16pt;
+}
+
+.table-games table {
+  color: coral;
+}
+
+h1,
+h2,
+h3 {
+    color: purple;
+    font-family: 'Monotype Corsiva';
+}
+
+.list-items1 {
+    color: red;
+    font-family: 'Times New Roman';
+    font-size: 18pt;
+}
+
+.list-items2 {
+    color: yellow;
+    font-family: 'Times New Roman';
+    font-size: 20pt;
+}
+
+.list-items3 {
+    color: green;
+    font-family: 'Times New Roman';
+    font-size: 22pt;
+}

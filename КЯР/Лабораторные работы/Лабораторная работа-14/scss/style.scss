@@ -1,0 +1,34 @@
+@import "../perem";
+@import "../extend";
+p {
+    @extend %parametr;
+    }
+h1,h2,h3{
+    font-family: 'Monotype Corsiva';
+color:$purple;
+}
+.list-items1{
+color: $red;
+font-family: 'Times New Roman', Times, serif;
+font-size: 18pt;
+}
+.list-items2{
+color: $yellow;
+font-family: 'Times New Roman', Times, serif;
+font-size: 20pt;
+}
+.list-items3{
+color: $green;
+font-family: 'Times New Roman', Times, serif;
+font-size: 22pt;
+}
+table{
+color: coral;
+border:1px solid black;
+}
+h1{
+    text-align: $center;
+}
+h3, h2{
+    font-size:4;
+}

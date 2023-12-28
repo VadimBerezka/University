@@ -1,31 +1,31 @@
 function drawChart() {
-    let size = 3;
+    let size = 3
 
-    let color = document.getElementById('color').value;
-    let choices = document.getElementsByName('chart');
-    let choice;
+    let color = document.getElementById('color').value
+    let choices = document.getElementsByName('chart')
+    let choice
     for (i = 0; i < choices.length; i++) {
         if (choices[i].checked) {
-            choice = choices[i].value;
-            break;
+            choice = choices[i].value
+            break
         }
     }
-    console.log(choice);
+    console.log(choice)
 
-    let x1 = 0;
-    let x2 = 1;
-    let y1;
-    let y2;
+    let x1 = 0
+    let x2 = 1
+    let y1
+    let y2
 
-    let nmax = calculateNMax(choice);
+    let nmax = calculateNMax(choice)
 
     for (i = 1; i <= nmax; i++) {
-        y1 = calculateY(choice, x1);
-        y2 = calculateY(choice, x2);
-        n = Math.ceil(Math.abs((y2 - y1)) / 2);
+        y1 = calculateY(choice, x1)
+        y2 = calculateY(choice, x2)
+        n = Math.ceil(Math.abs((y2 - y1)) / 2)
         for (j = 1; j <= n; j++) {
             if (y1 <= y2) {
-                y = y1 + j - 1;
+                y = y1 + j - 1
             }
             else {
                 y = y1 - j - 1;
@@ -49,13 +49,13 @@ function drawChart() {
 
 function calculateNMax(choice) {
     if (choice === 'sin') {
-        return 200;
+        return 1000;
     }
     if (choice === 'cos') {
         return 200;
     }
     if (choice === 'x^2') {
-        return 20;
+        return 200;
     }
     if (choice === 'x^3') {
         return 10;
