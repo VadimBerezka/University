@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео-обзоры игр</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            background-color: #ecaeae;
+            color: #444;
+        }
+
+        a {
+            font-size: 14px;
+            transition: font-size 0.3s;
+        }
+
+        a:hover {
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .video-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .video-item {
+            width: 400px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .video-item video {
+            width: 400px;
+            height: 360px;
+        }
+
+        .video-title {
+            padding: 10px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/JavaScript" src="../Лабораторная работа-16/index.js"></script>
+    <header>
+        <h1>Видео-обзоры игр</h1>
+    </header>
+    <nav>
+        <a href="../Лабораторная работа-16/index.html">Главная</a>
+        <a href="../Лабораторная работа-16/second.html">Обзоры</a>
+        <a id="link-contact" href="../Лабораторная работа-16/third.html">Контакты</a>
+        </nav>
+    <div class="video-list">
+        <div class="video-item">
+            <video width="320" height="360" controls>
+                <source src="Обзор Baldur’s Gate 3.mp4" type="video/mp4">
+            </video>
+            <div class="video-title">Baldur’s Gate III</div>
+        </div>
+        <div class="video-item">
+            <video width="320" height="360" controls>
+                <source src="Обзор игры Red Dead Redemption 2.mp4" type="video/mp4">
+            </video>
+            <div class="video-title">Red Dead Redemption 2</div>
+        </div>
+        <div class="video-item">
+            <video width="320" height="360" controls>
+                <source src="GofW.mp4" type="video/mp4">
+            </video>
+            <div class="video-title">God of War</div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2023 Видео-обзоры игр
+    </footer>
+</body>
+
+</html>

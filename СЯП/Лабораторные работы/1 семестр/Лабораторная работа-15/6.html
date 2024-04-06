@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+
+<body>
+    <script>
+        let Object1 = {
+            property1: "AA",
+            property2: "BB",
+            property3: "CC",
+            property4: "DD",
+        }
+        let deleted = function deleteProperty({ property1, ...rest }) {
+            return rest
+        }
+        Object1 = deleted(Object1)
+        Object1 = { ...Object1, surname: "Berezka", name: "Vadim" }
+        for (let key in Object1) {
+            console.log(key, Object1[key]);
+        }
+    </script>
+</body>
+
+</html>

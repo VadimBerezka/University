@@ -1,0 +1,37 @@
+body {
+    background-color: #FFC0CB;
+    color: #800080;
+    font-family: Arial, sans-serif;
+  }
+  
+  form {
+    background-color: #FFB6C1;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
+  input {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #DB7093;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #FF69B4;
+  }
+  
+  p {
+    color: #800080;
+  }
+  

@@ -36,6 +36,6 @@ int main() {
         default:
             cout << "Îøèáêà" << endl << endl;
         }
-    }
+    }   
     return 0;
 }

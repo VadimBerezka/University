@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+
+<body>
+    <script>
+        function reg(text) {
+            text = text.replace(/\[u\](\W*)\[\/u\]/gim, `<u>$1</u>`)
+
+            return text
+        }
+
+        let char = "[u]Привет\nВсем![/u]"
+        alert(reg(char))
+    </script>
+</body>
+
+</html>

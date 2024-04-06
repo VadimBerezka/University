@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+        let obj1={
+            name: "Vanya",
+            surname: "Ivanov",
+            age: 26,
+        } 
+        console.log(Object.keys(obj1).map(key => obj1[key]))
+        console.log(Object.values(obj1))
+        //2
+        let chisla=[425, 94359, 45803, 33]
+        for(i=0; i<4; i++){
+            (console.log(chisla[i]))
+        }for(i=0; i<4; i++){
+            console.log((chisla[i]).toString().padEnd(15, '0'))
+        }for(i=0; i<4; i++){
+            console.log((chisla[i]).toString().padStart(15, '0'))
+        }
+        //3
+        let me="myon Pozi"
+        me=me.toString().padStart(12, "#")
+        me=me.toString().padEnd(14, "17")
+        console.log(me)
+        //4
+        let arr1=""
+        let arr=["d", "g", "R"]
+        for(i=0;i<arr.length; i++){
+            arr1=((arr1+arr[i]))
+        }
+        console.log(arr1)
+        arr1= arr1.padStart(6, "1")
+        console.log(arr1)
+        arr1=arr1.padEnd(arr1.length+4, "_")+"0"
+        console.log(arr1)
+        //5
+        let obj2={
+            name: "Senya",
+            surname: "Ivanov",
+            age: 27,
+            get read(){
+                return(${this.name} ${this.surname} ${this.age})
+            },
+            opisname: "Свойство name описывает имя",
+        } 
+        console.log(obj2.read)
+        console.log(obj2.opisname)
+        //6
+        let obj3={
+            name: "Jenya",
+            surname: "Ivanov",
+            age: 24,
+        }
+        Object.defineProperties(obj3, Object.getOwnPropertyDescriptors(obj2, "opisname"))
+        console.log(obj3)
+    </script>
+</body>
+</html>

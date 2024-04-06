@@ -1,0 +1,56 @@
+.myChess {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    font-size: 1.2em;
+    color: #d27106;
+    flex-direction: column;
+    text-align: center;
+}
+
+.chessBoardContainer {
+    display: flex;
+    color: #d27106;
+}
+
+.chessBoard {
+    display: grid;
+    width: 360px;
+    height: 360px;
+    grid-template-columns: repeat(8, 45px);
+    grid-template-rows: repeat(8, 45px);
+    flex-wrap: wrap;
+    border: 1px solid #000;
+}
+
+.chessLetters {
+    display: flex;
+    justify-content: space-around;
+    width: 360px;
+    margin-left: 30px;
+}
+
+.chessNumbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+.chessRow {
+    display: flex;
+}
+
+.chessCell {
+    display: flex;
+    width: 45px;
+    height: 45px;
+}
+
+.light {
+    background-color: #fbe2c3;
+}
+
+.dark {
+    background-color: #d27106;
+}

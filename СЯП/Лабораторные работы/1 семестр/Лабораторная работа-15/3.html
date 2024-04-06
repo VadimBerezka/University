@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+
+<body>
+    <script>
+        function reg(text) {
+            text = text.replace(/\[(\/?)a(.*?)\]/sg, '<$1a$2>')
+            return text
+        }
+
+        let char = "[a]"
+        alert(reg(char))
+    </script>
+</body>
+
+</html>

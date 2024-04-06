@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+
+<body>
+    <script>
+        const regexp = /(?<firstName>.+), (?<lastName>.+)/g
+
+        const source = "firstName, lastName";
+        function change(text) {
+            text = regexp.exec(text)
+            return `${text.groups["lastName"]}, ${text.groups["firstName"]}`
+        }
+        console.log(source.replace(regexp, change))
+    </script>
+</body>
+
+</html>

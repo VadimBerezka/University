@@ -1,0 +1,8 @@
+TOV 1 2 Artem Dichka Chemistry Ivan Garski
+ISIT 2 1 Vadim Berezka OAiP Olga Arhipenko
+ISIT 3 1 Aleksey Gutor SYP Nikolay Beloded
+FIT 4 1 Gleg Kunizki SYP Minchuk Ivan
+TOV 5 1 Egor Novogilov Math Minchuk Ivan
+FIT 6 2 Vika Berezka History Minchuk Ivan
+PI 7 2 Nasty Sobal History Nikolay Beloded
+PI 8 2 Kirill Bogodzysh SYP ANikolay Beloded

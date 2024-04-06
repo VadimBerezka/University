@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Задание 4</title>
+</head>
+<body>
+    <script>
+        let arr1=""
+        let arr=["!", "@", "#", "$", "%"]
+        for(i=0;i<arr.length; i++){
+            arr1=((arr1+arr[i]))
+        }
+        console.log(arr1)
+        arr1= arr1.padStart(10, "1")
+        arr1=arr1.padEnd(arr1.length + 4, " ")+"0"
+        console.log(arr1)
+    </script>
+</body>
+</html>
