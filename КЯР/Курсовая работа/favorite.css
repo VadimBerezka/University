@@ -1,0 +1,355 @@
+body {
+    background-color: #17031b;
+    color: #FFFFFF;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url("/images/back4.jpg");
+    background-repeat: no-repeat;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #FFFFFF;
+    text-shadow: 0 0 1px #dfdddd, 0 0 2px #dfdddd, 0 0 3px #dfdddd, 0 0 4px #dfdddd, 0 0 10px #dfdddd, 0 0 12px #dfdddd;
+    margin-left: 30px;
+}
+
+
+.logo-and-title {
+    display: flex;
+    align-items: center;
+}
+
+.header-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-link:hover {
+    text-shadow: none;
+}
+
+.logo-image {
+    width: 125px;
+    border-radius: 30%;
+    margin-right: 30px;
+    margin-left: 60px;
+    box-shadow: 0 0 1px #FFFFFF, 0 0 2px #810791, 0 0 3px #FFFFFF, 0 0 4px #810791, 0 0 20px #FFFFFF, 0 0 25px #810791;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-and-title {
+    display: flex;
+    align-items: center;
+}
+
+.heart {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-shadow: 0 0 1px #dfdddd, 0 0 2px #dfdddd, 0 0 3px #dfdddd, 0 0 4px #dfdddd, 0 0 10px #dfdddd, 0 0 12px #dfdddd;
+    background-image: url("/images/back6.jpg");
+    background-repeat: no-repeat;
+    background-position: -45px -45px;
+    margin-top: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-image: url("/images/back6.jpg");
+    background-repeat: no-repeat;
+
+    margin-bottom: 0;
+}
+
+.genre-navigation {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-image: url("/images/back6.jpg");
+    background-repeat: no-repeat;
+    background-position: -80px -80px;
+    margin-bottom: 0;
+}
+
+.navigation a,
+.genre-navigation a {
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+.navigation a:hover,
+.genre-navigation a:hover {
+    color: #480578;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url("/images/back6.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transition: background-position 2s ease-in-out;
+    box-shadow: 0 0 10px #FFFFFF;
+    position: relative;
+}
+
+.game-container:hover {
+    background-position: -100px -100px;
+}
+
+.game-title {
+    text-align: center;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+    overflow: hidden;
+    text-shadow: 2px 2px 4px #FFFFFF;
+}
+
+.price {
+    text-align: center;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+    overflow: hidden;
+    text-shadow: 2px 2px 4px #FFFFFF;
+}
+
+
+.del {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: red;
+    font-size: 30px;
+  }
+  
+
+  
+.social-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+
+.footer {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url("/images/back4.jpg");
+    background-repeat: no-repeat;
+}
+
+.footer-link-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin-right: 10px;
+
+}
+
+.footer-link:hover {
+    color: #480578;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF;
+}
+
+
+
+svg:hover {
+    filter: drop-shadow(0 0 10px #FFFFFF);
+}
+
+/* Анимация пульсации */
+@keyframes pulse {
+    0% {
+        filter: drop-shadow(0 0 0 #FFFFFF);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 10px #FFFFFF);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 0 #FFFFFF);
+    }
+}
+
+svg {
+    animation: pulse 2s infinite;
+    filter: hue-rotate(0deg);
+    transition: filter 2s linear;
+}
+
+svg:hover {
+    filter: hue-rotate(360deg);
+}
+
+.xml {
+    color: #FFFFFF;
+    text-shadow: 0 0 1px #dfdddd, 0 0 2px #dfdddd, 0 0 3px #dfdddd, 0 0 4px #dfdddd, 0 0 10px #dfdddd, 0 0 12px #dfdddd;
+    margin-left: 800px;   
+}
+
+@media screen and (max-width: 391px) {
+    .header h1 {
+        font-size: 20px;
+        margin-left: 10px;
+
+    }
+
+    .logo-image {
+        width: 60px;
+        margin-left: 10px;
+        margin-right: 0%;
+    }
+
+
+    .heart {
+        width: 50px;
+        height: 30px;
+        top: 30px;
+        right: 15px;
+    }
+
+    lord-icon {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .page-title {
+        font-size: 20px;
+        background-image: url("/images/back6.jpg");
+        background-repeat: no-repeat;
+        background-position: -40px -40px;
+    }
+
+    .genre-navigation {
+        background-image: url("/images/back6.jpg");
+        background-repeat: no-repeat;
+        background-position: -65px -65px;
+        height: 40px;
+    }
+
+    .navigation a,
+    .genre-navigation a {
+        width: 80px;
+        font-size: 10px;
+        margin-right: 2px;
+    }
+
+
+    .main-content {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        width: 350px;
+    }
+
+    .game-container {
+        padding: 10px;
+    }
+
+    .game-title {
+        margin-bottom: 10px;
+        font-size: 18px;
+        width: 150px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-link {
+        width: 70px;
+        font-size: small;
+    }
+
+
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+
+}

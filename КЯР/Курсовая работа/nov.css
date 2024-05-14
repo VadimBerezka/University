@@ -1,0 +1,71 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url("/images/back6.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transition: background-position 2s ease-in-out;
+    box-shadow: 0 0 10px #FFFFFF;
+    position: relative;
+}
+
+.game-container::after {
+    content: "Новинка";
+    position: absolute;
+    top: 284px;
+    left: 64px;
+    width: 170px;
+    text-align: center;
+    transform-origin: top right;
+    background-color: red;
+    color: gold;
+    padding: 5px 15px;
+    font-size: 20px;
+
+
+} 
+
+.game-container:hover{
+    box-shadow: 
+    0 0 10px #ff0000, 
+    0 0 20px #ff7f00,
+    0 0 30px #ffff00, 
+    0 0 40px #ff7f00, 
+    0 0 50px #ff0000;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    color: #e5e535;
+    text-shadow: 
+        2px 2px 4px #ff4500,
+        0 0 10px #ff4500,
+        0 0 20px #ff4500,
+        0 0 30px #ff4500,
+        0 0 40px #ff4500; 
+    background-image: url("/images/back6.jpg");
+    background-repeat: no-repeat;
+    background-position: -45px -45px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 391px) {
+
+    .game-container::after {
+
+        top: 232px;
+        left: 25px;
+        width: 270px;
+        text-align: center;
+
+        padding: 5px 15px;
+        font-size: 20px;
+    }
+
+}

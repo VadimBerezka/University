@@ -4,8 +4,16 @@
 #include <clocale>
 
 using namespace std;
-
 #define sizeS 50 
+
+namespace DefaultMenuAction {
+	int defaultCount = 0;
+	void handleDefault() {
+		defaultCount++;
+		cout << "Вы выбрали недопустимый пункт меню. Пожалуйста, попробуйте снова." << endl;
+		cout << "Количество раз, когда был выбран недопустимый пункт меню: " << defaultCount << endl << endl;
+	}
+}
 
 union AllStudents {
 	char IDstudent[sizeS];
@@ -55,6 +63,9 @@ void bubbleSort();
 void bubbleSortReverse();
 void Sort();
 void printStudents();
+void quickSort(int low, int high);
+int partition(int low, int high);
+void swap(Students& a, Students& b);
 
 int main()
 {
@@ -69,7 +80,6 @@ int main()
 		cout << "\n5. Прочитать данные из файла";
 		cout << "\n6. Фильтрация по курсу";
 		cout << "\n7. Сортировка";
-
 		cout << "\n0.Завершить";
 		cout << "\n(Введите выбор):";
 		cin >> choice;
@@ -77,19 +87,15 @@ int main()
 		case(1):
 			new_write();
 			break;
-
 		case(2):
 			del_write();
 			break;
-
 		case(3):
 			out_write();
 			break;
-
 		case(4):
 			write_to_file();
 			break;
-
 		case(5):
 			read_from_file();
 			break;
@@ -102,6 +108,7 @@ int main()
 		case(0):
 			return 0;
 		default:
+			DefaultMenuAction::handleDefault();
 			break;
 		}
 	}
@@ -231,8 +238,9 @@ void Sort() {
 		cout << "4.Группа(в обратном порядке)\n";
 		cout << "5.Подгруппа(в обратном порядке)\n";
 		cout << "6.Полная сортировка\n";
-		cout << "7.полная сортировка(в обратном порядке)\n";
-		cout << "8.Выход из сортировки\n";
+		cout << "7.Полная сортировка(в обратном порядке)\n";
+		cout << "8.Найти прогульщиков(быстрая сортировка)\n";
+		cout << "9.Выход из сортировки\n";
 		cin >> ch;
 		switch (ch) {
 		case(0):
@@ -268,12 +276,49 @@ void Sort() {
 			printStudents();
 			break;
 		case(8):
+			quickSort(0, current_size_st - 1);
+			printStudents();
+			break;
+		case(9):
 			main();
 			break;
-
+		default:
+			DefaultMenuAction::handleDefault();
+			break;
 		}
 	}
 }
+
+
+
+void quickSort(int low, int high) {
+	if (low < high) {
+		int pi = partition(low, high);
+		quickSort(low, pi - 1);
+		quickSort(pi + 1, high);
+	}
+}
+
+int partition(int low, int high) {
+	bool pivot = list_of_students[high].attended;
+	int i = (low - 1);
+
+	for (int j = low; j <= high - 1; j++) {
+		if (list_of_students[j].attended <= pivot) {
+			i++;
+			swap(list_of_students[i], list_of_students[j]);
+		}
+	}
+	swap(list_of_students[i + 1], list_of_students[high]);
+	return (i + 1);
+}
+
+void swap(Students& a, Students& b) {
+	Students t = a;
+	a = b;
+	b = t;
+}
+
 
 void printStudents() {
 	for (int i = 0; i < current_size_st; i++) {
@@ -323,7 +368,7 @@ void new_write() {
 		cout << "\n Введите номер группы: ";
 		cin >> list_of_students[current_size_st].group;
 		file_course << list_of_students[current_size_st].group << " ";
-		
+
 		cout << "\n Введите номер подгруппы: ";
 		cin >> list_of_students[current_size_st].subgroup;
 		file_course << list_of_students[current_size_st].subgroup << endl;
@@ -838,6 +883,7 @@ void out_write() {
 			break;
 
 		default:
+			DefaultMenuAction::handleDefault();
 			break;
 		}
 	}
@@ -901,28 +947,6 @@ void read_from_file() {
 	}
 }
 
-//void read_from_file() {
-//	ifstream file_all_data("all_data.txt");
-//
-//	if (file_all_data.is_open()) {
-//		int i = 0;
-//		while (file_all_data >> list_of_students[i].department &&
-//			file_all_data >> list_of_students[i].course >> list_of_students[i].group >> list_of_students[i].subgroup &&
-//			file_all_data >> list_of_students[i].student_surname >> list_of_students[i].student_name >> list_of_students[i].student_patronymic &&
-//			file_all_data >> list_of_students[i].subject_name &&
-//			file_all_data >> list_of_students[i].teacher_surname >> list_of_students[i].teacher_name &&
-//			file_all_data >> list_of_students[i].attended) {
-//			i++;
-//		}
-//		current_size_st = i;
-//		file_all_data.close();
-//		cout << "Данные успешно считаны из файлов" << endl;
-//	}
-//	else {
-//		cout << "Не удалось открыть один или несколько файлов" << endl;
-//	}
-//}
-
 void filter_by_course() {
 
 	int lower_bound, upper_bound;
@@ -951,7 +975,7 @@ void filter_by_course() {
 		lower_bound = 1;
 		break;
 	default:
-		cout << "Неверный выбор.\n";
+		DefaultMenuAction::handleDefault();
 		return;
 	}
 
@@ -985,13 +1009,4 @@ void filter_by_course() {
 		}
 
 	}
-}	
-
-
-
-
-
-
-
-
-
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин видеоигр</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="top.css">
+
+</head>
+
+<body>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <header class="header">
+        <div class="logo-and-title">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="/images/logo.jpg" alt="Логотип сайта" class="logo-image">
+                </div>
+            </a>
+            <a href="index.html" class="header-link">
+                <h1>Интернет-магазин видеоигр</h1>
+            </a>
+            <a href="favorite.html" class="favorite">
+                <lord-icon src="https://cdn.lordicon.com/igciyimj.json" trigger="hover"
+                    colors="primary:#121331,secondary:#e83a30,tertiary:#ffc738,quaternary:#f9c9c0,quinary:#f24c00,senary:#ebe6ef"
+                    class="heart">
+                </lord-icon>
+            </a>
+    </header>
+
+
+    <nav class="navigation">
+
+        <a href="nov.html" class="nav-link">Новинки</a>
+        <a href="top.html" class="nav-link">Топ</a>
+        <a href="2023.html" class="nav-link">2-0-2-3</a>
+        <a href="2022.html" class="nav-link">2-0-2-2</a>
+        <a href="about.html" class="nav-link">О нас</a>
+    </nav>
+
+    <h2 class="page-title">ТОП</h2>
+    <div class="genre-navigation">
+        <a href="action.html" class="genge">Action</a>
+        <a href="adventure.html" class="genge">Adventure</a>
+        <a href="strategy.html" class="genge">Strategy</a>
+    </div>
+    <main class="main-content">
+
+        <div class="game-container">
+            <img src="/images/10.jpg" alt="Изображение игры" class="game-image">
+            <lord-icon onclick="addToBean(event)" src="https://cdn.lordicon.com/xyboiuok.json" trigger="morph" state="morph-heart"
+                colors="primary:red" style="width:50px;height:50px">
+            </lord-icon>
+            <h2 class="game-title">Atomic Heart</h2>
+            <p class="game-description">Дата выхода: 21 фев. 2023<br>
+                Жанр: Экшены, Приключенческие игры, Ролевые игры<br>
+                Разработчик: Mundfish<br>
+                Издательство: Focus Entertainment, 4Divinity<br>
+                Платформа: PC<br>
+                Тип издания: RePack<br>
+                Язык интерфейса: Русский, Английский, MULTi<br>
+                Язык озвучки: Русский, Английский, MULTi</p>
+            <div class="game-buttons">
+                <a href="/more.html" class="game-link">Подробнее</a>
+                <a href="buy.html" class="game-link">
+                    <span class="price">$59.99</span>
+                    <span class="buy-text">Купить</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <img src="/images/11.jpg" alt="Изображение игры" class="game-image">
+            <lord-icon onclick="addToBean(event)" src="https://cdn.lordicon.com/xyboiuok.json" trigger="morph" state="morph-heart"
+                colors="primary:red" style="width:50px;height:50px">
+            </lord-icon>
+            <h2 class="game-title">Assassin's Creed Mirage</h2>
+            <p class="game-description">Дата выхода: 5 окт. 2023 г.<br>
+                Жанр: Экшены, Приключенческие игры<br>
+                Разработчик: Ubisoft<br>
+                Издательство: Ubisoft<br>
+                Платформа: PC<br>
+                Тип издания: Лицензия<br>
+                Язык интерфейса: Русский, Английский, MULTi<br>
+                Язык озвучки: Английский, MULTi</p>
+            <div class="game-buttons">
+                <a href="/more.html" class="game-link">Подробнее</a>
+                <a href="buy.html" class="game-link">
+                    <span class="price">$59.99</span>
+                    <span class="buy-text">Купить</span>
+                </a>
+            </div>
+        </div>
+        <div class="game-container">
+            <img src="/images/4.jpg" alt="Изображение игры" class="game-image">
+            <lord-icon onclick="addToBean(event)" src="https://cdn.lordicon.com/xyboiuok.json" trigger="morph" state="morph-heart"
+                colors="primary:red" style="width:50px;height:50px">
+            </lord-icon>
+            <h2 class="game-title">Ready Or Not
+            </h2>
+            <p class="game-description">Дата выхода: 13 дек. 2023<br>
+                Жанр: Экшены, Приключенческие игры<br>
+                Разработчик: VOID Interactive<br>
+                Издатель: VOID Interactive<br>
+                Платформа: PC<br>
+                Тип издания: Repack<br>
+                Язык интерфейса: Английский<br>
+                Язык озвучки: Английский</p>
+            <div class="game-buttons">
+                <a href="/more.html" class="game-link">Подробнее</a>
+                <a href="buy.html" class="game-link">
+                    <span class="price">$59.99</span>
+                    <span class="buy-text">Купить</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <img src="/images/5.jpg" alt="Изображение игры" class="game-image">
+            <lord-icon onclick="addToBean(event)" src="https://cdn.lordicon.com/xyboiuok.json" trigger="morph" state="morph-heart"
+                colors="primary:red" style="width:50px;height:50px">
+            </lord-icon>
+            <h2 class="game-title">Red Dead Redemption 2
+            </h2>
+            <p class="game-description">Дата релиза: 5 ноября 2019 г.<br>
+                Жанр: Action (Shooter) / Adventure / Western / Open World<br>
+                Разработчик: Rockstar Studios<br>
+                Издатель: Rockstar Games<br>
+                Платформа: PC<br>
+                Тип издания: Repack<br>
+                Язык интерфейса: Русский / Английский / MULTi13<br>
+                Язык озвучки: Английский
+            </p>
+            <div class="game-buttons">
+                <a href="/more.html" class="game-link">Подробнее</a>
+                <a href="buy.html" class="game-link">
+                    <span class="price">$59.99</span>
+                    <span class="buy-text">Купить</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="socials">
+            <a href="https://www.instagram.com/"><img src="/images/icon_instagram.png" alt="Instagram"
+                    class="social-icon"></a>
+            <a href="https://web.telegram.org/a/"><img src="/images/icon_tg.png" alt="Telegram" class="social-icon"></a>
+            <a href="https://www.google.com/intl/ru/gmail/about/"><img src="/images/icon_gmail.png" alt="Gmail"
+                    class="social-icon"></a>
+            <a href="https://github.com/"><img src="/images/icon_github.png" alt="Github" class="social-icon"></a>
+        </div>
+        <div class="xml">
+            <XML ID="dsoBook">
+            <?xml version="1.0"?>
+            <BOOK>
+                +375299780571
+            </BOOK>
+        </XML>
+        </div>
+        <div class="footer-link-container">
+            <a href="help.html" class="footer-link">Помощь</a>
+            <a href="help.html">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50.000000pt" height="50.000000pt"
+                    viewBox="0 0 320.000000 320.000000" preserveAspectRatio="xMidYMid meet">
+
+                    <g transform="translate(0.000000,320.000000) scale(0.100000,-0.100000)" fill="#F3F3F3"
+                        stroke="none">
+                        <path d="M602 2837 c-91 -91 -105 -127 -58 -148 29 -14 58 4 124 76 l43 47
+           123 -120 c102 -99 132 -122 175 -137 68 -22 129 -16 205 20 49 23 67 27 115
+           22 31 -3 76 -13 100 -23 l44 -17 -39 -20 c-85 -43 -327 -255 -357 -312 -19
+           -36 -22 -59 -25 -248 -5 -248 0 -287 37 -329 24 -27 36 -32 89 -36 52 -4 67 0
+           113 24 71 39 97 79 144 222 l39 122 121 0 120 0 140 -140 c138 -138 165 -156
+           193 -128 27 27 10 54 -100 165 -62 62 -110 114 -108 116 3 2 43 13 90 26 115
+           30 147 63 101 105 -17 16 -23 15 -102 -8 -112 -32 -249 -48 -389 -45 -63 2
+           -121 0 -127 -4 -7 -5 -33 -72 -58 -150 -50 -155 -73 -190 -136 -209 -70 -21
+           -69 -25 -69 229 1 160 4 235 13 250 7 12 66 69 132 127 220 194 363 238 598
+           185 186 -42 259 -13 452 180 l130 131 185 -185 c183 -182 210 -201 238 -173
+           32 32 14 57 -191 264 -151 151 -210 204 -227 204 -18 0 -66 -41 -175 -149 -82
+           -82 -169 -158 -192 -170 -51 -26 -124 -27 -220 -5 -47 11 -104 15 -188 13
+           -105 -3 -125 -1 -160 18 -139 71 -261 85 -360 39 -67 -31 -134 -36 -169 -12
+           -12 8 -81 71 -153 140 -93 89 -138 126 -155 126 -16 0 -49 -25 -106 -83z" />
+                        <path d="M203 2438 c-153 -153 -203 -208 -203 -227 0 -17 35 -60 128 -155 140
+           -143 151 -163 171 -296 23 -150 84 -289 194 -442 30 -42 60 -92 66 -111 14
+           -40 78 -103 115 -113 l24 -6 -20 -45 c-57 -130 37 -268 183 -268 l56 0 24 -50
+           c33 -67 83 -105 150 -113 52 -7 54 -8 60 -42 16 -96 89 -160 182 -160 41 0 51
+           -6 111 -60 72 -65 123 -86 190 -76 94 15 174 93 183 180 6 46 6 46 45 46 48 0
+           104 23 141 58 33 31 67 92 67 120 0 16 7 17 63 14 72 -5 121 14 169 65 29 30
+           58 91 58 122 0 16 8 19 55 20 68 0 114 21 159 71 51 57 67 126 46 202 -10 36
+           -9 39 60 130 74 98 158 255 184 348 9 30 22 92 30 138 9 49 25 100 40 125 13
+           23 77 94 140 157 83 82 116 121 116 138 0 30 -142 180 -179 189 -18 4 -29 0
+           -43 -17 -10 -12 -18 -27 -18 -32 0 -6 29 -40 65 -77 l64 -67 -104 -104 c-126
+           -126 -151 -168 -175 -303 -21 -119 -55 -213 -111 -312 -49 -84 -130 -194 -144
+           -195 -6 0 -93 83 -195 185 -102 102 -192 185 -202 185 -17 0 -48 -35 -48 -54
+           0 -6 95 -105 211 -221 226 -228 238 -245 215 -315 -15 -45 -67 -80 -119 -80
+           -40 0 -47 6 -282 240 -133 132 -249 240 -257 240 -23 0 -48 -28 -48 -53 0 -14
+           71 -93 220 -242 163 -163 221 -228 226 -251 18 -90 -89 -174 -169 -133 -12 6
+           -119 108 -238 226 -196 195 -219 215 -243 209 -17 -4 -28 -15 -32 -32 -6 -24
+           12 -45 184 -218 104 -105 195 -201 201 -213 42 -82 -41 -186 -135 -169 -34 6
+           -68 36 -269 241 -153 156 -243 239 -268 250 -37 15 -37 15 -22 45 17 34 20
+           106 4 147 -14 38 -67 92 -106 109 -42 18 -115 18 -160 -1 -20 -8 -37 -14 -37
+           -13 -1 2 -9 20 -19 40 -21 48 -86 95 -141 103 -71 11 -121 -9 -189 -76 -71
+           -68 -63 -71 -131 46 -50 85 -98 227 -114 337 -15 103 -44 151 -164 273 l-107
+           111 184 185 c102 102 185 193 185 202 0 22 -28 47 -53 47 -14 0 -88 -67 -224
+           -202z m652 -1042 c52 -52 45 -105 -21 -171 -41 -40 -51 -45 -91 -45 -36 0 -50
+           6 -74 29 -49 49 -36 117 36 180 47 41 113 44 150 7z m304 -112 c37 -31 49 -80
+           28 -120 -9 -16 -76 -89 -150 -161 -131 -131 -134 -133 -178 -133 -36 0 -50 5
+           -71 28 -33 35 -40 68 -24 106 8 17 76 93 153 169 127 125 143 137 176 137 23
+           0 46 -9 66 -26z m134 -314 c19 -21 27 -41 27 -67 0 -33 -9 -46 -85 -121 -83
+           -84 -85 -85 -125 -79 -23 3 -50 13 -60 22 -29 27 -43 77 -30 111 13 33 100
+           126 145 156 41 26 92 18 128 -22z m215 -215 c15 -18 22 -39 22 -66 0 -36 -7
+           -48 -57 -101 -84 -88 -124 -104 -182 -74 -31 17 -51 54 -51 98 0 24 14 45 71
+           104 39 40 81 74 93 76 35 6 80 -10 104 -37z m208 -217 c18 -35 18 -62 -2 -104
+           -20 -42 -59 -64 -114 -64 -34 0 -48 7 -85 41 l-45 42 68 71 c38 39 72 82 77
+           95 7 23 7 23 47 -15 22 -22 46 -51 54 -66z" />
+                    </g>
+                </svg></a>
+
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

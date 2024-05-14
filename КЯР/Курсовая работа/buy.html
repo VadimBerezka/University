@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покупка игры</title>
+    <style>
+        body {
+            color: #FFFFFF;
+            font-family: 'Press Start 2P', cursive;
+            background-color: #17031b;
+        }
+
+        .container {
+            width: 500px;
+            padding: 16px;
+            background-image: url("/images/back6.jpg");
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 8px;
+            font-family: 'Press Start 2P', cursive;
+
+        }
+
+        .small-input {
+            width: 30%;
+        }
+
+        .button {
+            font-size: 16px;
+            font-family: 'Press Start 2P', cursive;
+            display: inline-block;
+            color: #FFFFFF;
+            text-decoration: none;
+            border: 2px solid #FFFFFF;
+            border-radius: 15px;
+            padding: 10px;
+            transition: all 0.3s ease;
+            width: 40%;
+            text-align: center;
+            position: relative;
+            background: none;
+            margin: 5px;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+
+        .button:hover {
+            color: #4B0082;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF;
+        }
+
+        .button2 {
+            font-size: 16px;
+            font-family: 'Press Start 2P', cursive;
+            display: inline-block;
+            color: #FFFFFF;
+            text-decoration: none;
+            border: 2px solid #FFFFFF;
+            border-radius: 15px;
+            padding: 10px;
+            transition: all 0.3s ease;
+            width: 40%;
+            text-align: center;
+            position: relative;
+            background: none;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .button2:hover {
+            color: #4B0082;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF;
+        }
+
+        @media (max-width: 391px) {
+            .container {
+                max-width: 90%;
+            }
+
+            .small-input {
+                width: 100%;
+            }
+
+            .button {
+                margin-left: 20px;
+
+                width: 80%;
+            }
+
+            .button2 {
+                margin-left: 30px;
+                width: 80%;
+            }
+        }
+    </style>
+    <script>
+function validateForm() {
+    var cardNumber = document.forms["myForm"]["cardNumber"].value;
+    var cardHolder = document.forms["myForm"]["cardHolder"].value;
+    var expiryMonth = document.forms["myForm"]["expiryMonth"].value;
+    var expiryYear = document.forms["myForm"]["expiryYear"].value;
+    var cvv = document.forms["myForm"]["cvv"].value;
+    var email = document.forms["myForm"]["email"].value;
+    var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    var cardNumberRegex = /^[0-9]{16}$/;
+    var cvvRegex = /^[0-9]{3,4}$/;
+
+    var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
+    var currentMonth = (currentDate.getMonth() + 1).toString().padStart(2, '0'); // Получение текущего месяца в формате "MM"
+
+    if (cardNumber == "" || cardHolder == "" || expiryMonth == "" || expiryYear == "" || cvv == "" || email == "") {
+        alert("Все поля должны быть заполнены");
+        return false;
+    } else if (!emailRegex.test(email)) {
+        alert("Email введен некорректно");
+        return false;
+    } else if (!cardNumberRegex.test(cardNumber)) {
+        alert("Номер карты должен состоять из 16 цифр");
+        return false;
+    } else if (!cvvRegex.test(cvv)) {
+        alert("CVV должен состоять из 3 или 4 цифр");
+        return false;
+    } else if (expiryYear == currentYear && expiryMonth < currentMonth) {
+        alert("Невозможно выбрать текущую дату истечения срока карты");
+        return false;
+    } else {
+        var confirmation = confirm("Вы уверены, что хотите оформить заказ?");
+        if (confirmation == true) {
+            alert("Ваш заказ успешно оформлен");
+            document.forms["myForm"]["cardNumber"].value = "";
+            document.forms["myForm"]["cardHolder"].value = "";
+            document.forms["myForm"]["expiryMonth"].value = "";
+            document.forms["myForm"]["expiryYear"].value = "";
+            document.forms["myForm"]["cvv"].value = "";
+            document.forms["myForm"]["email"].value = "";
+            window.location.href = "index.html";
+        }
+        return false;
+    }
+} </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <form name="myForm" onsubmit="return validateForm()">
+            <label for="cardNumber"><b>Номер карты:</b></label>
+            <input type="text" placeholder="Введите номер карты" name="cardNumber" required>
+
+            <label for="cardHolder"><b>Держатель карты:</b></label>
+            <input type="text" placeholder="Введите имя держателя карты" name="cardHolder" required>
+            <br>
+            <label for="expiryMonth"><b>Месяц истечения срока:</b></label>
+            <select name="expiryMonth" required>
+                <option value="">Выберите месяц</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <br>
+            <label for="expiryYear"><b>Год истечения срока:</b></label>
+            <select name="expiryYear" required>
+                <option value="">Выберите год</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+                <option value="2034">2034</option>
+                <option value="2035">2035</option>
+                <option value="2036">2036</option>
+            </select>
+            <br>
+            <label for="cvv"><b>CVV:</b></label>
+            <input type="text" placeholder="Введите CVV" name="cvv" required class="small-input">
+            <br>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="email" placeholder="Введите ваш Email" name="email" required>
+
+            <a href="index.html" class="button">На главную</a>
+            <input type="submit" value="Купить" class="button2">
+        </form>
+    </div>
+</body>
+
+</html>

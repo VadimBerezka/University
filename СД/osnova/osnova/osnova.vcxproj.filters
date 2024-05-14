@@ -19,4 +19,27 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\dopolnenie\all_data.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="..\dopolnenie\attended.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="..\dopolnenie\course.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="..\dopolnenie\department.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="..\dopolnenie\student.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="..\dopolnenie\subject_name.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="..\dopolnenie\teacher.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

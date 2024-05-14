@@ -129,6 +129,15 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\dopolnenie\all_data.txt" />
+    <Text Include="..\dopolnenie\attended.txt" />
+    <Text Include="..\dopolnenie\course.txt" />
+    <Text Include="..\dopolnenie\department.txt" />
+    <Text Include="..\dopolnenie\student.txt" />
+    <Text Include="..\dopolnenie\subject_name.txt" />
+    <Text Include="..\dopolnenie\teacher.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

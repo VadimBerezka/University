@@ -1,0 +1,67 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url("/images/back6.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transition: background-position 2s ease-in-out;
+    box-shadow: 0 0 10px #FFFFFF;
+    position: relative;
+}
+
+.game-container::after {
+    content: "action";
+    position: absolute;
+    top: 284px;
+    left: 63px;
+    width: 170px;
+    text-align: center;
+    transform-origin: top right;
+    background-color: #6495ED;
+    color: #4169E1;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+
+.game-container:hover{
+    box-shadow: 
+    0 0 10px #6495ED, 
+    0 0 20px #4169E1,
+    0 0 30px #4169E1, 
+    0 0 40px #6495ED, 
+    0 0 50px #6495ED;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    color: #4169E1;
+    text-shadow: 
+        2px 2px 4px #4169E1,
+        0 0 10px #4169E1,
+        0 0 20px #4169E1,
+        0 0 30px #4169E1,
+        0 0 40px #4169E1; 
+    background-image: url("/images/back6.jpg");
+    background-repeat: no-repeat;
+    background-position: -45px -45px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 391px) {
+
+    .game-container::after {
+        top: 232px;
+        left: 25px;
+        width: 270px;
+        text-align: center;
+        padding: 5px 15px;
+        font-size: 20px;
+    }
+
+}

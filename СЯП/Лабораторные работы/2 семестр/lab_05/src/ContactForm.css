@@ -1,0 +1,72 @@
+.container {
+    background-color: #FFC0CB;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+form {
+    color: #FF69B4;
+}
+
+.inputContainer {
+    margin-bottom: 20px;
+}
+
+input {
+    background-color: #FFB6C1;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.errorContainer {
+    color: #FF0000;
+}
+
+.radioButtonsContainer {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.radioButtonContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #FF1493;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #FF69B4;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #FFB6C1;
+    color: #FFFFFF;
+}
+
+tr:nth-child(even) {
+    background-color: #FFDEE9;
+}
+
+tr:nth-child(odd) {
+    background-color: #FED4E3;
+}

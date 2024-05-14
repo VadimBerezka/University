@@ -1,0 +1,70 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url("/images/back6.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transition: background-position 2s ease-in-out;
+    box-shadow: 0 0 10px #FFFFFF;
+        position: relative;
+}
+
+.game-container::after {
+    content: "2-0-2-3";
+    position: absolute;
+    top: 284px;
+    left: 64px;
+    width: 170px;
+    text-align: center;
+    transform-origin: top right;
+    background-color: #B0E0E6;
+    color: #4682B4;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+
+.game-container:hover{
+    box-shadow: 
+    0 0 10px #B0E0E6, 
+    0 0 20px #87CEFA,
+    0 0 30px #ADD8E6, 
+    0 0 40px #87CEFA, 
+    0 0 50px #B0E0E6;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    color: #4682B4;
+    text-shadow: 
+        2px 2px 4px #ADD8E6,
+        0 0 10px #ADD8E6,
+        0 0 20px #ADD8E6,
+        0 0 30px #ADD8E6,
+        0 0 40px #ADD8E6; 
+    background-image: url("/images/back6.jpg");
+    background-repeat: no-repeat;
+    background-position: -45px -45px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 391px) {
+
+    .game-container::after {
+
+        top: 232px;
+        left: 25px;
+        width: 270px;
+        text-align: center;
+
+        padding: 5px 15px;
+        font-size: 20px;
+    }
+
+}

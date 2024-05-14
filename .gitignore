@@ -1,0 +1,58 @@
+/vendor/
+# phpstorm project files
+.idea
+
+.env.local
+.env.*.local
+
+# scss
+*.css.map
+
+# js
+*.js.map
+*.js.LICENSE.txt
+
+# composer vendor dir
+/www/protected/config/*-local.php
+/www/.htaccess
+/www/*.rss
+/www/protected/vendor/dompdf/lib/fonts/log.htm
+/www/protected/vendor/dompdf/lib/fonts/*.php
+
+# composer itself is not needed
+composer.phar
+
+# PHPUnit
+/www/protected/tests/report
+/www/protected/vendor/php-unit/assets
+.phpunit.result.cache
+/phpunit.xml
+phpunit.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+/www/sitemap.xml
+/www/sitemap*.xml
+!/www/sitemap-academy.xml
+
+/www/protected/views/assets/prepros.cfg
+/www/protected/views/assets/prepros-6.config
+
+# QR-code cache
+/www/protected/extensions/qrcode/phpqrcode/cache
+
+/gulpimages
+/www/protected/views/assets/img/preview-sprite/*.*
+node_modules/
+.parcel-cache
+/.vscode/
+/.vs/
+
+.history
+
+# Symfony
+/symfony-app/var/
+/www/public/bundles/
+
+/www/protected/data/AssetVersions.php

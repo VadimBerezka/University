@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свяжитесь с нами</title>
+    <style>
+        body {
+            color: #FFFFFF;
+            font-family: 'Press Start 2P', cursive;
+            background-color: #17031b;
+        }
+
+        .container {
+            width: 300px;
+            padding: 16px;
+            background-image: url("/images/back6.jpg");
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 8px;
+            font-family: 'Press Start 2P', cursive;
+
+        }
+
+        .button {
+            font-size: 16px;
+            font-family: 'Press Start 2P', cursive;
+            display: inline-block;
+            color: #FFFFFF;
+            text-decoration: none;
+            border: 2px solid #FFFFFF;
+            border-radius: 15px;
+            padding: 10px;
+            transition: all 0.3s ease;
+            width: 40%;
+            text-align: center;
+            position: relative;
+            background: none;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            color: #4B0082;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF;
+        }
+
+        @media screen and (max-width: 390px) {
+            .container {
+                width: 90%;
+                padding: 10px;
+            }
+
+            input[type=text],
+            input[type=email],
+            textarea {
+                font-size: 14px;
+                padding: 10px 15px;
+
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 8px;
+                width: 100%;
+
+            }
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var name = document.forms["myForm"]["name"].value;
+            var email = document.forms["myForm"]["email"].value;
+            var problem = document.forms["myForm"]["problem"].value;
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+            if (name == "" || email == "" || problem == "") {
+                alert("Все поля должны быть заполнены");
+                return false;
+            } else if (!emailRegex.test(email)) {
+                alert("Email введен некорректно");
+                return false;
+            } else {
+                alert("Ваше сообщение отправлено, ожидайте ответа");
+                window.location.href = "index.html";
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <form name="myForm" onsubmit="return validateForm()">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" placeholder="Введите ваше имя" name="name" required>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="email" placeholder="Введите ваш Email" name="email" required>
+
+            <label for="problem"><b>Problem:</b></label>
+            <textarea placeholder="Опишите вашу проблему здесь" name="problem" required></textarea>
+
+            <a href="index.html" class="button">На главную</a>
+            <input type="submit" value="Отправить" class="button">
+        </form>
+    </div>
+    
+</body>
+
+</html>
