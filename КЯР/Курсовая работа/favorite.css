@@ -352,4 +352,9 @@ svg:hover {
         height: 30px;
     }
 
+    .xml {
+        color: #FFFFFF;
+        text-shadow: 0 0 1px #dfdddd, 0 0 2px #dfdddd, 0 0 3px #dfdddd, 0 0 4px #dfdddd, 0 0 10px #dfdddd, 0 0 12px #dfdddd;
+        margin-left: -10px;  
+    }
 }
