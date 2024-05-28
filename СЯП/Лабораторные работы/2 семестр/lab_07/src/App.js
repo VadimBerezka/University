@@ -1,10 +1,10 @@
-import { Comments } from './Comments'
-import './App.css'
+import Comments from './Comments'
+import './Comments.css'
 
 function App() {
   return (
     <div>
-        <Comments />
+      <Comments />
     </div>
   )
 }

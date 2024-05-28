@@ -1,0 +1,79 @@
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+
+select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.version-container {
+    position: relative;
+    display: inline-block;
+
+}
+
+.version-container input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 300px;
+}
+
+.version-display {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+
+}
+
+.version-display p {
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 0;
+
+}
+
+.version-display p:hover {
+    background-color: #f5f5f5;
+}
+
+.closebtn {
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 26px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #e53935;
+    border-radius: 5px;
+
+}
+
+.closebtn:hover {
+    color: #e53935;
+    background-color: white;
+    box-shadow: 0 10 10px rgba(254, 37, 37, 0.3);
+}

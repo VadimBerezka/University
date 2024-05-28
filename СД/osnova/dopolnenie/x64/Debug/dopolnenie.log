@@ -1,16 +1,18 @@
-﻿Сборка начата 29.04.2024 00:53:21.
+﻿Сборка начата 16.05.2024 19:43:34.
 Уровень детализации журнала: Normal.     1>Проект "C:\University\СД\osnova\dopolnenie\dopolnenie.vcxproj" в узле 2 (целевые объекты Build).
      1>InitializeBuildStatus:
+         Создание "x64\Debug\dopolnenie.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
          Обращение к "x64\Debug\dopolnenie.tlog\unsuccessfulbuild".
        ClCompile:
          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt dop.cpp
          dop.cpp
+     1>C:\University\СД\osnova\dopolnenie\dop.cpp(279,41): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
      1>C:\University\СД\osnova\dopolnenie\dop.cpp(221,6): warning C4101: IDstudent: неиспользованная локальная переменная
      1>C:\University\СД\osnova\dopolnenie\dop.cpp(224,6): warning C4101: group: неиспользованная локальная переменная
      1>C:\University\СД\osnova\dopolnenie\dop.cpp(225,6): warning C4101: subgroup: неиспользованная локальная переменная
      1>C:\University\СД\osnova\dopolnenie\dop.cpp(232,7): warning C4101: attended: неиспользованная локальная переменная
      1>C:\University\СД\osnova\dopolnenie\dop.cpp(223,6): warning C4101: course: неиспользованная локальная переменная
-     1>C:\University\СД\osnova\dopolnenie\dop.cpp(497,7): warning C4101: attended: неиспользованная локальная переменная
+     1>C:\University\СД\osnova\dopolnenie\dop.cpp(511,7): warning C4101: attended: неиспользованная локальная переменная
        Link:
          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\University\СД\osnova\x64\Debug\dopolnenie.exe" /INCREMENTAL /ILK:"x64\Debug\dopolnenie.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\University\СД\osnova\x64\Debug\dopolnenie.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\University\СД\osnova\x64\Debug\dopolnenie.lib" /MACHINE:X64 x64\Debug\dop.obj
          x64\Debug\test.obj
@@ -24,14 +26,15 @@
 
        "C:\University\СД\osnova\dopolnenie\dopolnenie.vcxproj" (целевой объект Build ) (1) ->
        (Целевой объект ClCompile) -> 
+         C:\University\СД\osnova\dopolnenie\dop.cpp(279,41): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
          C:\University\СД\osnova\dopolnenie\dop.cpp(221,6): warning C4101: IDstudent: неиспользованная локальная переменная
          C:\University\СД\osnova\dopolnenie\dop.cpp(224,6): warning C4101: group: неиспользованная локальная переменная
          C:\University\СД\osnova\dopolnenie\dop.cpp(225,6): warning C4101: subgroup: неиспользованная локальная переменная
          C:\University\СД\osnova\dopolnenie\dop.cpp(232,7): warning C4101: attended: неиспользованная локальная переменная
          C:\University\СД\osnova\dopolnenie\dop.cpp(223,6): warning C4101: course: неиспользованная локальная переменная
-         C:\University\СД\osnova\dopolnenie\dop.cpp(497,7): warning C4101: attended: неиспользованная локальная переменная
+         C:\University\СД\osnova\dopolnenie\dop.cpp(511,7): warning C4101: attended: неиспользованная локальная переменная
 
-    Предупреждений: 6
+    Предупреждений: 7
     Ошибок: 0
 
-Прошло времени 00:00:00.92
+Прошло времени 00:00:01.06

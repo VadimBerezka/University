@@ -2,7 +2,8 @@
 #include <string>
 #include <fstream>
 #include <clocale>
-
+#include <vector>
+#include <stack>
 using namespace std;
 #define sizeS 50 
 
@@ -44,8 +45,7 @@ struct Students {
 	bool attended;
 };
 
-struct Students list_of_students[sizeS], free_student;
-int current_size_st = 0;
+vector<Students> list_of_students, free_student;
 
 void new_write();
 void del_write();
@@ -116,8 +116,8 @@ int main()
 }
 
 void bubbleCourseUp() {
-	for (int i = 0; i < current_size_st - 1; i++) {
-		for (int j = 0; j < current_size_st - i - 1; j++) {
+	for (int i = 0; i < list_of_students.size() - 1; i++) {
+		for (int j = 0; j < list_of_students.size() - i - 1; j++) {
 			if (list_of_students[j].course > list_of_students[j + 1].course) {
 				Students temp = list_of_students[j];
 				list_of_students[j] = list_of_students[j + 1];
@@ -128,8 +128,8 @@ void bubbleCourseUp() {
 }
 
 void bubbleGroupUp() {
-	for (int i = 0; i < current_size_st - 1; i++) {
-		for (int j = 0; j < current_size_st - i - 1; j++) {
+	for (int i = 0; i < list_of_students.size() - 1; i++) {
+		for (int j = 0; j < list_of_students.size() - i - 1; j++) {
 			if (list_of_students[j].group > list_of_students[j + 1].group) {
 				Students temp = list_of_students[j];
 				list_of_students[j] = list_of_students[j + 1];
@@ -140,8 +140,8 @@ void bubbleGroupUp() {
 }
 
 void bubbleCourseDown() {
-	for (int i = 0; i < current_size_st - 1; i++) {
-		for (int j = 0; j < current_size_st - i - 1; j++) {
+	for (int i = 0; i < list_of_students.size() - 1; i++) {
+		for (int j = 0; j < list_of_students.size() - i - 1; j++) {
 			if (list_of_students[j].course < list_of_students[j + 1].course) {
 				Students temp = list_of_students[j];
 				list_of_students[j] = list_of_students[j + 1];
@@ -152,8 +152,8 @@ void bubbleCourseDown() {
 }
 
 void bubbleGroupDown() {
-	for (int i = 0; i < current_size_st - 1; i++) {
-		for (int j = 0; j < current_size_st - i - 1; j++) {
+	for (int i = 0; i < list_of_students.size() - 1; i++) {
+		for (int j = 0; j < list_of_students.size() - i - 1; j++) {
 			if (list_of_students[j].group < list_of_students[j + 1].group) {
 				Students temp = list_of_students[j];
 				list_of_students[j] = list_of_students[j + 1];
@@ -164,8 +164,8 @@ void bubbleGroupDown() {
 }
 
 void bubbleSubgroupDown() {
-	for (int i = 0; i < current_size_st - 1; i++) {
-		for (int j = 0; j < current_size_st - i - 1; j++) {
+	for (int i = 0; i < list_of_students.size() - 1; i++) {
+		for (int j = 0; j < list_of_students.size() - i - 1; j++) {
 			if (list_of_students[j].subgroup > list_of_students[j + 1].subgroup) {
 				Students temp = list_of_students[j];
 				list_of_students[j] = list_of_students[j + 1];
@@ -176,8 +176,8 @@ void bubbleSubgroupDown() {
 }
 
 void bubbleSubgroupUp() {
-	for (int i = 0; i < current_size_st - 1; i++) {
-		for (int j = 0; j < current_size_st - i - 1; j++) {
+	for (int i = 0; i < list_of_students.size() - 1; i++) {
+		for (int j = 0; j < list_of_students.size() - i - 1; j++) {
 			if (list_of_students[j].subgroup < list_of_students[j + 1].subgroup) {
 				Students temp = list_of_students[j];
 				list_of_students[j] = list_of_students[j + 1];
@@ -188,8 +188,8 @@ void bubbleSubgroupUp() {
 }
 
 void bubbleSort() {
-	for (int i = 0; i < current_size_st - 1; i++) {
-		for (int j = 0; j < current_size_st - i - 1; j++) {
+	for (int i = 0; i < list_of_students.size() - 1; i++) {
+		for (int j = 0; j < list_of_students.size() - i - 1; j++) {
 			if (list_of_students[j].course > list_of_students[j + 1].course ||
 				(list_of_students[j].course == list_of_students[j + 1].course && list_of_students[j].group > list_of_students[j + 1].group) ||
 				(list_of_students[j].course == list_of_students[j + 1].course && list_of_students[j].group == list_of_students[j + 1].group && list_of_students[j].subgroup > list_of_students[j + 1].subgroup)) {
@@ -202,8 +202,8 @@ void bubbleSort() {
 }
 
 void bubbleSortReverse() {
-	for (int i = 0; i < current_size_st - 1; i++) {
-		for (int j = 0; j < current_size_st - i - 1; j++) {
+	for (int i = 0; i < list_of_students.size() - 1; i++) {
+		for (int j = 0; j < list_of_students.size() - i - 1; j++) {
 			if (list_of_students[j].course < list_of_students[j + 1].course ||
 				(list_of_students[j].course == list_of_students[j + 1].course && list_of_students[j].group < list_of_students[j + 1].group) ||
 				(list_of_students[j].course == list_of_students[j + 1].course && list_of_students[j].group == list_of_students[j + 1].group && list_of_students[j].subgroup < list_of_students[j + 1].subgroup)) {
@@ -276,12 +276,12 @@ void Sort() {
 			printStudents();
 			break;
 		case(8):
-			quickSort(0, current_size_st - 1);
+			quickSort(0, list_of_students.size() - 1);
 			printStudents();
 			break;
 		case(9):
 			main();
-			break;
+			break;	
 		default:
 			DefaultMenuAction::handleDefault();
 			break;
@@ -291,26 +291,41 @@ void Sort() {
 
 
 
-void quickSort(int low, int high) {
-	if (low < high) {
-		int pi = partition(low, high);
-		quickSort(low, pi - 1);
-		quickSort(pi + 1, high);
-	}
-}
 
 int partition(int low, int high) {
-	bool pivot = list_of_students[high].attended;
-	int i = (low - 1);
-
+	Students pivot = list_of_students[high];
+	int i = low - 1;
 	for (int j = low; j <= high - 1; j++) {
-		if (list_of_students[j].attended <= pivot) {
+		if (list_of_students[j].attended < pivot.attended) {
 			i++;
 			swap(list_of_students[i], list_of_students[j]);
 		}
 	}
 	swap(list_of_students[i + 1], list_of_students[high]);
-	return (i + 1);
+	return i + 1;
+}
+
+void quickSort(int low, int high) {
+	//использование стека для хранения подмассивов для быстрой сортировки
+	stack<pair<int, int>> stack;
+	stack.push(make_pair(low, high));
+	while (!stack.empty()) {
+		//берем пару индексов из стека
+		pair<int, int> current = stack.top();
+		stack.pop();
+
+		int left = current.first;
+		int right = current.second;
+
+		if (left < right) {
+			//разбиваем и получаем позицию опорного элемента
+			int pi = partition(left, right);
+
+			//засовываем в стек границы подмассивов которые нужно отсортировать
+			stack.push(make_pair(left, pi - 1));
+			stack.push(make_pair(pi + 1, right));
+		}
+	}
 }
 
 void swap(Students& a, Students& b) {
@@ -321,7 +336,7 @@ void swap(Students& a, Students& b) {
 
 
 void printStudents() {
-	for (int i = 0; i < current_size_st; i++) {
+	for (int i = 0; i < list_of_students.size(); i++) {
 		cout << "Запись №";
 		cout << i + 1;
 		cout << ": Кафедра - ";
@@ -351,57 +366,57 @@ void printStudents() {
 }
 
 void new_write() {
-	if (current_size_st < sizeS) {
-		cout << "\n Запись №" << current_size_st + 1 << ": ";
-
+	if (list_of_students.size() < sizeS) {
+		cout << "\n Запись №" << list_of_students.size() + 1 << ": ";
+		Students tmp;
 		cout << "\n Введите название кафедры: ";
-		cin >> list_of_students[current_size_st].department;
+		cin >> tmp.department;
 		ofstream file_department("department.txt", ios::app);
-		file_department << list_of_students[current_size_st].department << endl;
+		file_department << tmp.department << endl;
 		file_department.close();
 
 		cout << "\n Введите номер курса: ";
-		cin >> list_of_students[current_size_st].course;
+		cin >> tmp.course;
 		ofstream file_course("course.txt", ios::app);
-		file_course << list_of_students[current_size_st].course << " ";
+		file_course << tmp.course << " ";
 
 		cout << "\n Введите номер группы: ";
-		cin >> list_of_students[current_size_st].group;
-		file_course << list_of_students[current_size_st].group << " ";
+		cin >> tmp.group;
+		file_course << tmp.group << " ";
 
 		cout << "\n Введите номер подгруппы: ";
-		cin >> list_of_students[current_size_st].subgroup;
-		file_course << list_of_students[current_size_st].subgroup << endl;
+		cin >> tmp.subgroup;
+		file_course << tmp.subgroup << endl;
 		file_course.close();
 
 		cout << "\n Введите фамилию: ";
-		cin >> list_of_students[current_size_st].student_surname;
+		cin >> tmp.student_surname;
 		ofstream file_student("student.txt", ios::app);
-		file_student << list_of_students[current_size_st].student_surname << " ";
+		file_student << tmp.student_surname << " ";
 
 		cout << "\n Введите имя: ";
-		cin >> list_of_students[current_size_st].student_name;
-		file_student << list_of_students[current_size_st].student_name << " ";
+		cin >> tmp.student_name;
+		file_student << tmp.student_name << " ";
 
 		cout << "\n Введите отчество: ";
-		cin >> list_of_students[current_size_st].student_patronymic;
-		file_student << list_of_students[current_size_st].student_patronymic << endl;
+		cin >> tmp.student_patronymic;
+		file_student << tmp.student_patronymic << endl;
 		file_student.close();
 
 		cout << "\n Введите название предмета: ";
-		cin >> list_of_students[current_size_st].subject_name;
+		cin >> tmp.subject_name;
 		ofstream file_subject_name("subject_name.txt", ios::app);
-		file_subject_name << list_of_students[current_size_st].subject_name << endl;
+		file_subject_name << tmp.subject_name << endl;
 		file_subject_name.close();
 
 		cout << "\n Введите фамилию преподавателя: ";
-		cin >> list_of_students[current_size_st].teacher_surname;
+		cin >> tmp.teacher_surname;
 		ofstream file_teacher("teacher.txt", ios::app);
-		file_teacher << list_of_students[current_size_st].teacher_surname << " ";
+		file_teacher << tmp.teacher_surname << " ";
 
 		cout << "\n Введите имя преподавателя: ";
-		cin >> list_of_students[current_size_st].teacher_name;
-		file_teacher << list_of_students[current_size_st].teacher_name << endl;
+		cin >> tmp.teacher_name;
+		file_teacher << tmp.teacher_name << endl;
 		file_teacher.close();
 
 		int attended;
@@ -412,12 +427,11 @@ void new_write() {
 				cout << "Некорректное значение. Пожалуйста, введите 1 (да) или 0 (нет).\n";
 			}
 		} while (attended != 1 && attended != 0);
-		list_of_students[current_size_st].attended = attended;
+		tmp.attended = attended;
 		ofstream file_attended("attended.txt", ios::app);
-		file_attended << list_of_students[current_size_st].attended << endl;
+		file_attended << tmp.attended << endl;
 		file_attended.close();
-
-		current_size_st++;
+		list_of_students.push_back(tmp);
 	}
 	else {
 		cout << " Введено максимальное кол-во строк" << endl;
@@ -512,7 +526,7 @@ void out_write() {
 		case(0):
 			cout << "Введите ID студента: ";
 			cin >> IDstudent;
-			if (IDstudent > current_size_st || IDstudent < 1) {
+			if (IDstudent > list_of_students.size() || IDstudent < 1) {
 				cout << "Студента с таким ID не существует.\n";
 			}
 			else {
@@ -543,7 +557,7 @@ void out_write() {
 		case(1):
 			cout << "Введите кафедру:";
 			cin >> department;
-			for (int i = 0; i < current_size_st; i++) {
+			for (int i = 0; i < list_of_students.size(); i++) {
 				if (list_of_students[i].department == department) {
 					cout << "Запись №";
 					cout << i + 1;
@@ -577,7 +591,7 @@ void out_write() {
 		case(2):
 			cout << "Введите курс:";
 			cin >> course;
-			for (int i = 0; i < current_size_st; i++) {
+			for (int i = 0; i < list_of_students.size(); i++) {
 				if (list_of_students[i].course = course) {
 					cout << "Запись №";
 					cout << i + 1;
@@ -611,7 +625,7 @@ void out_write() {
 		case(3):
 			cout << "Введите группу:";
 			cin >> group;
-			for (int i = 0; i < current_size_st; i++) {
+			for (int i = 0; i < list_of_students.size(); i++) {
 				if (list_of_students[i].group = group) {
 					cout << "Запись №";
 					cout << i + 1;
@@ -646,7 +660,7 @@ void out_write() {
 			if (search_subgroup == 1) {
 				cout << "Введите подгруппу:";
 				cin >> subgroup;
-				for (int i = 0; i < current_size_st; i++) {
+				for (int i = 0; i < list_of_students.size(); i++) {
 					if (list_of_students[i].group == group && list_of_students[i].subgroup == subgroup) {
 						cout << "Запись №";
 						cout << i + 1;
@@ -681,7 +695,7 @@ void out_write() {
 		case(4):
 			cout << "Введите имя студента:";
 			cin >> student_name;
-			for (int i = 0; i < current_size_st; i++) {
+			for (int i = 0; i < list_of_students.size(); i++) {
 				if (list_of_students[i].student_name == student_name) {
 					cout << "Запись №";
 					cout << i + 1;
@@ -715,7 +729,7 @@ void out_write() {
 		case(5):
 			cout << "Введите фамилию студента:";
 			cin >> student_surname;
-			for (int i = 0; i < current_size_st; i++) {
+			for (int i = 0; i < list_of_students.size(); i++) {
 				if (list_of_students[i].student_surname == student_surname) {
 					cout << "Запись №";
 					cout << i + 1;
@@ -749,7 +763,7 @@ void out_write() {
 		case(6):
 			cout << "Введите название предмета:";
 			cin >> subject_name;
-			for (int i = 0; i < current_size_st; i++) {
+			for (int i = 0; i < list_of_students.size(); i++) {
 				if (list_of_students[i].subject_name == subject_name) {
 					cout << "Запись №";
 					cout << i + 1;
@@ -783,7 +797,7 @@ void out_write() {
 		case(7):
 			cout << "Введите имя преподавателя:";
 			cin >> teacher_name;
-			for (int i = 0; i < current_size_st; i++) {
+			for (int i = 0; i < list_of_students.size(); i++) {
 				if (list_of_students[i].teacher_name == teacher_name) {
 					cout << "Запись №";
 					cout << i + 1;
@@ -817,7 +831,7 @@ void out_write() {
 		case(8):
 			cout << "Введите фамилию преподавателя:";
 			cin >> teacher_surname;
-			for (int i = 0; i < current_size_st; i++) {
+			for (int i = 0; i < list_of_students.size(); i++) {
 				if (list_of_students[i].teacher_surname == teacher_surname) {
 					cout << "Запись №";
 					cout << i + 1;
@@ -849,7 +863,7 @@ void out_write() {
 			break;
 
 		case(9):
-			for (int i = 0; i < current_size_st; i++) {
+			for (int i = 0; i < list_of_students.size(); i++) {
 				cout << "Запись №";
 				cout << i + 1;
 				cout << ": Кафедра - ";
@@ -893,7 +907,7 @@ void write_to_file() {
 	ofstream file("all_data.txt");
 	if (file.is_open()) {
 		cout << "Запись данных в файл.\n";
-		for (int i = 0; i < current_size_st; i++) {
+		for (int i = 0; i < list_of_students.size(); i++) {
 			file << list_of_students[i].department << " "
 				<< list_of_students[i].course << " "
 				<< list_of_students[i].group << " "
@@ -924,16 +938,15 @@ void read_from_file() {
 
 	if (file_department.is_open() && file_course.is_open() && file_student.is_open() && file_subject_name.is_open() &&
 		file_teacher.is_open() && file_attended.is_open()) {
-		int i = 0;
-		while (file_department >> list_of_students[i].department &&
-			file_course >> list_of_students[i].course >> list_of_students[i].group >> list_of_students[i].subgroup &&
-			file_student >> list_of_students[i].student_surname >> list_of_students[i].student_name >> list_of_students[i].student_patronymic &&
-			file_subject_name >> list_of_students[i].subject_name &&
-			file_teacher >> list_of_students[i].teacher_surname >> list_of_students[i].teacher_name &&
-			file_attended >> list_of_students[i].attended) {
-			i++;
+		Students tmp;
+		while (file_department >> tmp.department &&
+			file_course >> tmp.course >> tmp.group >> tmp.subgroup &&
+			file_student >> tmp.student_surname >> tmp.student_name >> tmp.student_patronymic &&
+			file_subject_name >> tmp.subject_name &&
+			file_teacher >> tmp.teacher_surname >> tmp.teacher_name &&
+			file_attended >> tmp.attended) {
+			list_of_students.push_back(tmp);
 		}
-		current_size_st = i;
 		file_department.close();
 		file_course.close();
 		file_student.close();
@@ -979,7 +992,7 @@ void filter_by_course() {
 		return;
 	}
 
-	for (int i = 0; i < current_size_st; i++) {
+	for (int i = 0; i < list_of_students.size(); i++) {
 		if (list_of_students[i].course >= lower_bound && list_of_students[i].course <= upper_bound) {
 			cout << "Запись №";
 			cout << i + 1;
