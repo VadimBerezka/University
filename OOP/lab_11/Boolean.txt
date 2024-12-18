@@ -1,0 +1,22 @@
+класс: System.Boolean
+имя сборки: System.Private.CoreLib
+есть ли публичные конструкторы? ответ: False
+Публичные методы:
+GetHashCode
+ToString
+ToString
+TryFormat
+Equals
+Equals
+CompareTo
+CompareTo
+GetTypeCode
+GetType
+Поля и свойства:
+Реализованные интерфейсы:
+IComparable
+IConvertible
+IComparable`1
+IEquatable`1
+ISpanParsable`1
+IParsable`1

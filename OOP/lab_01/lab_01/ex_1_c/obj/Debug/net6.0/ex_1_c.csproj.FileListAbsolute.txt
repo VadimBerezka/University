@@ -1,0 +1,14 @@
+C:\University\OOP\lab_01\lab_01\ex_1_c\bin\Debug\net6.0\ex_1_c.exe
+C:\University\OOP\lab_01\lab_01\ex_1_c\bin\Debug\net6.0\ex_1_c.deps.json
+C:\University\OOP\lab_01\lab_01\ex_1_c\bin\Debug\net6.0\ex_1_c.runtimeconfig.json
+C:\University\OOP\lab_01\lab_01\ex_1_c\bin\Debug\net6.0\ex_1_c.dll
+C:\University\OOP\lab_01\lab_01\ex_1_c\bin\Debug\net6.0\ex_1_c.pdb
+C:\University\OOP\lab_01\lab_01\ex_1_c\obj\Debug\net6.0\ex_1_c.GeneratedMSBuildEditorConfig.editorconfig
+C:\University\OOP\lab_01\lab_01\ex_1_c\obj\Debug\net6.0\ex_1_c.AssemblyInfoInputs.cache
+C:\University\OOP\lab_01\lab_01\ex_1_c\obj\Debug\net6.0\ex_1_c.AssemblyInfo.cs
+C:\University\OOP\lab_01\lab_01\ex_1_c\obj\Debug\net6.0\ex_1_c.csproj.CoreCompileInputs.cache
+C:\University\OOP\lab_01\lab_01\ex_1_c\obj\Debug\net6.0\ex_1_c.dll
+C:\University\OOP\lab_01\lab_01\ex_1_c\obj\Debug\net6.0\refint\ex_1_c.dll
+C:\University\OOP\lab_01\lab_01\ex_1_c\obj\Debug\net6.0\ex_1_c.pdb
+C:\University\OOP\lab_01\lab_01\ex_1_c\obj\Debug\net6.0\ex_1_c.genruntimeconfig.cache
+C:\University\OOP\lab_01\lab_01\ex_1_c\obj\Debug\net6.0\ref\ex_1_c.dll

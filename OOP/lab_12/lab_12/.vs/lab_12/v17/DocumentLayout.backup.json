@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\University\\OOP\\lab_12\\lab_12\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{495F268C-88F4-4315-9E0A-A3177C5E834B}|lab_12\\lab_12.csproj|c:\\university\\oop\\lab_12\\lab_12\\lab_12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{495F268C-88F4-4315-9E0A-A3177C5E834B}|lab_12\\lab_12.csproj|solutionrelative:lab_12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{495F268C-88F4-4315-9E0A-A3177C5E834B}|lab_12\\lab_12.csproj|c:\\university\\oop\\lab_12\\lab_12\\lab_12\\bvsfilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{495F268C-88F4-4315-9E0A-A3177C5E834B}|lab_12\\lab_12.csproj|solutionrelative:lab_12\\bvsfilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{495F268C-88F4-4315-9E0A-A3177C5E834B}|lab_12\\lab_12.csproj|c:\\university\\oop\\lab_12\\lab_12\\lab_12\\bvslog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{495F268C-88F4-4315-9E0A-A3177C5E834B}|lab_12\\lab_12.csproj|solutionrelative:lab_12\\bvslog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{495F268C-88F4-4315-9E0A-A3177C5E834B}|lab_12\\lab_12.csproj|c:\\university\\oop\\lab_12\\lab_12\\lab_12\\bvsdiskinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{495F268C-88F4-4315-9E0A-A3177C5E834B}|lab_12\\lab_12.csproj|solutionrelative:lab_12\\bvsdiskinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{495F268C-88F4-4315-9E0A-A3177C5E834B}|lab_12\\lab_12.csproj|c:\\university\\oop\\lab_12\\lab_12\\lab_12\\bvsfileinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{495F268C-88F4-4315-9E0A-A3177C5E834B}|lab_12\\lab_12.csproj|solutionrelative:lab_12\\bvsfileinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{495F268C-88F4-4315-9E0A-A3177C5E834B}|lab_12\\lab_12.csproj|c:\\university\\oop\\lab_12\\lab_12\\lab_12\\bvsdirinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{495F268C-88F4-4315-9E0A-A3177C5E834B}|lab_12\\lab_12.csproj|solutionrelative:lab_12\\bvsdirinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BVSLog.cs",
+              "DocumentMoniker": "C:\\University\\OOP\\lab_12\\lab_12\\lab_12\\BVSLog.cs",
+              "RelativeDocumentMoniker": "lab_12\\BVSLog.cs",
+              "ToolTip": "C:\\University\\OOP\\lab_12\\lab_12\\lab_12\\BVSLog.cs",
+              "RelativeToolTip": "lab_12\\BVSLog.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwCYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T09:45:26.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BVSDiskInfo.cs",
+              "DocumentMoniker": "C:\\University\\OOP\\lab_12\\lab_12\\lab_12\\BVSDiskInfo.cs",
+              "RelativeDocumentMoniker": "lab_12\\BVSDiskInfo.cs",
+              "ToolTip": "C:\\University\\OOP\\lab_12\\lab_12\\lab_12\\BVSDiskInfo.cs",
+              "RelativeToolTip": "lab_12\\BVSDiskInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T09:45:55.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BVSFileInfo.cs",
+              "DocumentMoniker": "C:\\University\\OOP\\lab_12\\lab_12\\lab_12\\BVSFileInfo.cs",
+              "RelativeDocumentMoniker": "lab_12\\BVSFileInfo.cs",
+              "ToolTip": "C:\\University\\OOP\\lab_12\\lab_12\\lab_12\\BVSFileInfo.cs",
+              "RelativeToolTip": "lab_12\\BVSFileInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T09:46:43.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BVSDirInfo.cs",
+              "DocumentMoniker": "C:\\University\\OOP\\lab_12\\lab_12\\lab_12\\BVSDirInfo.cs",
+              "RelativeDocumentMoniker": "lab_12\\BVSDirInfo.cs",
+              "ToolTip": "C:\\University\\OOP\\lab_12\\lab_12\\lab_12\\BVSDirInfo.cs",
+              "RelativeToolTip": "lab_12\\BVSDirInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T09:47:04.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BVSFileManager.cs",
+              "DocumentMoniker": "C:\\University\\OOP\\lab_12\\lab_12\\lab_12\\BVSFileManager.cs",
+              "RelativeDocumentMoniker": "lab_12\\BVSFileManager.cs",
+              "ToolTip": "C:\\University\\OOP\\lab_12\\lab_12\\lab_12\\BVSFileManager.cs",
+              "RelativeToolTip": "lab_12\\BVSFileManager.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwG0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T09:47:46.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\University\\OOP\\lab_12\\lab_12\\lab_12\\Program.cs",
+              "RelativeDocumentMoniker": "lab_12\\Program.cs",
+              "ToolTip": "C:\\University\\OOP\\lab_12\\lab_12\\lab_12\\Program.cs",
+              "RelativeToolTip": "lab_12\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T09:42:47.154Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

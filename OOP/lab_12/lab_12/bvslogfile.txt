@@ -1,0 +1,4 @@
+действие: hi, имя файла: bvslogfile.txt, путь: C:\University\OOP\lab_12\lab_12\bvslogfile.txt, время: 06.12.2024 20:24:32
+действие: bye, имя файла: bvslogfile.txt, путь: C:\University\OOP\lab_12\lab_12\bvslogfile.txt, время: 06.12.2024 20:24:32
+действие: hi, имя файла: bvslogfile.txt, путь: C:\University\OOP\lab_12\lab_12\bvslogfile.txt, время: 06.12.2024 20:25:09
+действие: bye, имя файла: bvslogfile.txt, путь: C:\University\OOP\lab_12\lab_12\bvslogfile.txt, время: 06.12.2024 20:25:09

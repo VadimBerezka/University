@@ -1,0 +1,39 @@
+класс: Student
+имя сборки: lab_11
+есть ли публичные конструкторы? ответ: True
+Публичные методы:
+get_FirstName
+set_FirstName
+get_LastName
+set_LastName
+get_MiddleName
+set_MiddleName
+get_BirthDate
+set_BirthDate
+get_Address
+set_Address
+get_PhoneNumber
+set_PhoneNumber
+get_Faculty
+set_Faculty
+get_Course
+set_Course
+get_Group
+set_Group
+get_Id
+GetType
+ToString
+Equals
+GetHashCode
+Поля и свойства:
+FirstName
+LastName
+MiddleName
+BirthDate
+Address
+PhoneNumber
+Faculty
+Course
+Group
+Id
+Реализованные интерфейсы:
