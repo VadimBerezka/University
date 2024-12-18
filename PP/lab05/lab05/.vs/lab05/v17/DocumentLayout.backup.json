@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\University\\PP\\lab05\\lab05\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|c:\\university\\pp\\lab05\\lab05\\lab05\\http.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|solutionrelative:lab05\\http.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|c:\\university\\pp\\lab05\\lab05\\lab05\\iwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|solutionrelative:lab05\\iwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|c:\\university\\pp\\lab05\\lab05\\lab05\\filewriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|solutionrelative:lab05\\filewriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|c:\\university\\pp\\lab05\\lab05\\lab05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|solutionrelative:lab05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|c:\\university\\pp\\lab05\\lab05\\lab05\\decrsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|solutionrelative:lab05\\decrsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|c:\\university\\pp\\lab05\\lab05\\lab05\\decmd5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|solutionrelative:lab05\\decmd5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|c:\\university\\pp\\lab05\\lab05\\lab05\\decsha512.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|solutionrelative:lab05\\decsha512.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|c:\\university\\pp\\lab05\\lab05\\lab05\\decorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|solutionrelative:lab05\\decorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|c:\\university\\pp\\lab05\\lab05\\lab05\\constant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|solutionrelative:lab05\\constant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|c:\\university\\pp\\lab05\\lab05\\lab05\\strwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16604F9B-DF9A-4E31-8CB9-81DC4EFA4EEF}|lab05\\lab05.csproj|solutionrelative:lab05\\strwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "http.cs",
+              "DocumentMoniker": "C:\\University\\PP\\lab05\\lab05\\lab05\\http.cs",
+              "RelativeDocumentMoniker": "lab05\\http.cs",
+              "ToolTip": "C:\\University\\PP\\lab05\\lab05\\lab05\\http.cs",
+              "RelativeToolTip": "lab05\\http.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAwwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T10:51:18.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StrWriter.cs",
+              "DocumentMoniker": "C:\\University\\PP\\lab05\\lab05\\lab05\\StrWriter.cs",
+              "RelativeDocumentMoniker": "lab05\\StrWriter.cs",
+              "ToolTip": "C:\\University\\PP\\lab05\\lab05\\lab05\\StrWriter.cs",
+              "RelativeToolTip": "lab05\\StrWriter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:26:04.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IWriter.cs",
+              "DocumentMoniker": "C:\\University\\PP\\lab05\\lab05\\lab05\\IWriter.cs",
+              "RelativeDocumentMoniker": "lab05\\IWriter.cs",
+              "ToolTip": "C:\\University\\PP\\lab05\\lab05\\lab05\\IWriter.cs",
+              "RelativeToolTip": "lab05\\IWriter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:25:43.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileWriter.cs",
+              "DocumentMoniker": "C:\\University\\PP\\lab05\\lab05\\lab05\\FileWriter.cs",
+              "RelativeDocumentMoniker": "lab05\\FileWriter.cs",
+              "ToolTip": "C:\\University\\PP\\lab05\\lab05\\lab05\\FileWriter.cs",
+              "RelativeToolTip": "lab05\\FileWriter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:25:29.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Decorator.cs",
+              "DocumentMoniker": "C:\\University\\PP\\lab05\\lab05\\lab05\\Decorator.cs",
+              "RelativeDocumentMoniker": "lab05\\Decorator.cs",
+              "ToolTip": "C:\\University\\PP\\lab05\\lab05\\lab05\\Decorator.cs",
+              "RelativeToolTip": "lab05\\Decorator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:25:11.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DecSHA512.cs",
+              "DocumentMoniker": "C:\\University\\PP\\lab05\\lab05\\lab05\\DecSHA512.cs",
+              "RelativeDocumentMoniker": "lab05\\DecSHA512.cs",
+              "ToolTip": "C:\\University\\PP\\lab05\\lab05\\lab05\\DecSHA512.cs",
+              "RelativeToolTip": "lab05\\DecSHA512.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:24:48.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DecMD5.cs",
+              "DocumentMoniker": "C:\\University\\PP\\lab05\\lab05\\lab05\\DecMD5.cs",
+              "RelativeDocumentMoniker": "lab05\\DecMD5.cs",
+              "ToolTip": "C:\\University\\PP\\lab05\\lab05\\lab05\\DecMD5.cs",
+              "RelativeToolTip": "lab05\\DecMD5.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:24:02.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DecRSA.cs",
+              "DocumentMoniker": "C:\\University\\PP\\lab05\\lab05\\lab05\\DecRSA.cs",
+              "RelativeDocumentMoniker": "lab05\\DecRSA.cs",
+              "ToolTip": "C:\\University\\PP\\lab05\\lab05\\lab05\\DecRSA.cs",
+              "RelativeToolTip": "lab05\\DecRSA.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:24:18.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Constant.cs",
+              "DocumentMoniker": "C:\\University\\PP\\lab05\\lab05\\lab05\\Constant.cs",
+              "RelativeDocumentMoniker": "lab05\\Constant.cs",
+              "ToolTip": "C:\\University\\PP\\lab05\\lab05\\lab05\\Constant.cs",
+              "RelativeToolTip": "lab05\\Constant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:23:36.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\University\\PP\\lab05\\lab05\\lab05\\Program.cs",
+              "RelativeDocumentMoniker": "lab05\\Program.cs",
+              "ToolTip": "C:\\University\\PP\\lab05\\lab05\\lab05\\Program.cs",
+              "RelativeToolTip": "lab05\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:21:46.751Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

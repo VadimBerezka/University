@@ -1,0 +1,12 @@
+C:\Users\bubblechuk\source\repos\Lab03Patterns\Lec03LibN\obj\Debug\Lec03LibN.csproj.AssemblyReference.cache
+C:\Users\bubblechuk\source\repos\Lab03Patterns\Lec03LibN\obj\Debug\Lec03LibN.csproj.CoreCompileInputs.cache
+C:\Users\bubblechuk\source\repos\Lab03Patterns\Lec03LibN\bin\Debug\Lec03LibN.dll
+C:\Users\bubblechuk\source\repos\Lab03Patterns\Lec03LibN\bin\Debug\Lec03LibN.pdb
+C:\Users\bubblechuk\source\repos\Lab03Patterns\Lec03LibN\obj\Debug\Lec03LibN.dll
+C:\Users\bubblechuk\source\repos\Lab03Patterns\Lec03LibN\obj\Debug\Lec03LibN.pdb
+C:\University\PP\Lab03Patterns\Lec03LibN\bin\Debug\Lec03LibN.dll
+C:\University\PP\Lab03Patterns\Lec03LibN\bin\Debug\Lec03LibN.pdb
+C:\University\PP\Lab03Patterns\Lec03LibN\obj\Debug\Lec03LibN.csproj.AssemblyReference.cache
+C:\University\PP\Lab03Patterns\Lec03LibN\obj\Debug\Lec03LibN.csproj.CoreCompileInputs.cache
+C:\University\PP\Lab03Patterns\Lec03LibN\obj\Debug\Lec03LibN.dll
+C:\University\PP\Lab03Patterns\Lec03LibN\obj\Debug\Lec03LibN.pdb

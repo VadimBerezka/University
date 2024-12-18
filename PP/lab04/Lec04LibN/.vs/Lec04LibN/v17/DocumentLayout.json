@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\University\\PP\\lab04\\Lec04LibN\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB755541-7597-4D43-AAA4-451CFCFC4A1C}|Lec04LibN\\Lec04LibN.csproj|c:\\university\\pp\\lab04\\lec04libn\\lec04libn\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB755541-7597-4D43-AAA4-451CFCFC4A1C}|Lec04LibN\\Lec04LibN.csproj|solutionrelative:lec04libn\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61DF4B96-FCB5-403B-844E-C3424B9DAEAC}|PP-04\\PP-04.csproj|c:\\university\\pp\\lab04\\lec04libn\\pp-04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61DF4B96-FCB5-403B-844E-C3424B9DAEAC}|PP-04\\PP-04.csproj|solutionrelative:pp-04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\University\\PP\\lab04\\Lec04LibN\\PP-04\\Program.cs",
+              "RelativeDocumentMoniker": "PP-04\\Program.cs",
+              "ToolTip": "C:\\University\\PP\\lab04\\Lec04LibN\\PP-04\\Program.cs",
+              "RelativeToolTip": "PP-04\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T22:43:16.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\University\\PP\\lab04\\Lec04LibN\\Lec04LibN\\Logger.cs",
+              "RelativeDocumentMoniker": "Lec04LibN\\Logger.cs",
+              "ToolTip": "C:\\University\\PP\\lab04\\Lec04LibN\\Lec04LibN\\Logger.cs",
+              "RelativeToolTip": "Lec04LibN\\Logger.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T22:13:00.675Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

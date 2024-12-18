@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec04LibN", "Lec04LibN\Lec04LibN.csproj", "{DB755541-7597-4D43-AAA4-451CFCFC4A1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PP-04", "PP-04\PP-04.csproj", "{61DF4B96-FCB5-403B-844E-C3424B9DAEAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB755541-7597-4D43-AAA4-451CFCFC4A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB755541-7597-4D43-AAA4-451CFCFC4A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB755541-7597-4D43-AAA4-451CFCFC4A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB755541-7597-4D43-AAA4-451CFCFC4A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61DF4B96-FCB5-403B-844E-C3424B9DAEAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61DF4B96-FCB5-403B-844E-C3424B9DAEAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61DF4B96-FCB5-403B-844E-C3424B9DAEAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61DF4B96-FCB5-403B-844E-C3424B9DAEAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD9BB57D-AFEB-4402-AB12-792EA73BF4E3}
+	EndGlobalSection
+EndGlobal
