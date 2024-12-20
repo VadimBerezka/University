@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\уник\2 курс 3 сем\ооп\15\lab15\lab15\bin\Debug\lab15.exe.config
+C:\Users\User\Desktop\уник\2 курс 3 сем\ооп\15\lab15\lab15\bin\Debug\lab15.exe
+C:\Users\User\Desktop\уник\2 курс 3 сем\ооп\15\lab15\lab15\bin\Debug\lab15.pdb
+C:\Users\User\Desktop\уник\2 курс 3 сем\ооп\15\lab15\lab15\obj\Debug\lab15.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\уник\2 курс 3 сем\ооп\15\lab15\lab15\obj\Debug\lab15.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\уник\2 курс 3 сем\ооп\15\lab15\lab15\obj\Debug\lab15.exe
+C:\Users\User\Desktop\уник\2 курс 3 сем\ооп\15\lab15\lab15\obj\Debug\lab15.pdb
+C:\University\OOP\lab15\lab15\bin\Debug\lab15.exe.config
+C:\University\OOP\lab15\lab15\bin\Debug\lab15.exe
+C:\University\OOP\lab15\lab15\bin\Debug\lab15.pdb
+C:\University\OOP\lab15\lab15\obj\Debug\lab15.csproj.AssemblyReference.cache
+C:\University\OOP\lab15\lab15\obj\Debug\lab15.csproj.CoreCompileInputs.cache
+C:\University\OOP\lab15\lab15\obj\Debug\lab15.exe
+C:\University\OOP\lab15\lab15\obj\Debug\lab15.pdb

@@ -12,3 +12,4 @@ C:\University\OOP\lab_04\Lab_04\Lab_04\obj\Debug\net6.0\refint\Lab_04.dll
 C:\University\OOP\lab_04\Lab_04\Lab_04\obj\Debug\net6.0\Lab_04.pdb
 C:\University\OOP\lab_04\Lab_04\Lab_04\obj\Debug\net6.0\Lab_04.genruntimeconfig.cache
 C:\University\OOP\lab_04\Lab_04\Lab_04\obj\Debug\net6.0\ref\Lab_04.dll
+C:\University\OOP\lab_04\Lab_04\Lab_04\obj\Debug\net6.0\Lab_04.sourcelink.json

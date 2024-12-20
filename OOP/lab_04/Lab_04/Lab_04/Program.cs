@@ -122,19 +122,6 @@
         }
     }
 
-    public class CarControl
-    {
-        public void Accelerate()
-        {
-            //Console.WriteLine("ускоряемся");
-        }
-
-        public void Brake()
-        {
-            //Console.WriteLine("сломалась");
-        }
-    }
-
     public class Engine
     {
     private int horsePower;
@@ -212,7 +199,19 @@
         }
     }
 
-    public class Transformer : AbstractVehicle
+public class CarControl
+{
+    public void Accelerate()
+    {
+        //Console.WriteLine("ускоряемся");
+    }
+
+    public void Brake()
+    {
+        //Console.WriteLine("сломалась");
+    }
+}
+public class Transformer : AbstractVehicle
     {
         public Transformer(string brand, string model, Engine engine) : base(brand, model, engine) 
         {

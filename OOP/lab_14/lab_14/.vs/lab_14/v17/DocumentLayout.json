@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\University\\OOP\\lab_14\\lab_14\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D29BA47-D42C-4EE7-8EEC-9A7EEC857A9A}|lab_14\\lab_14.csproj|c:\\university\\oop\\lab_14\\lab_14\\lab_14\\info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D29BA47-D42C-4EE7-8EEC-9A7EEC857A9A}|lab_14\\lab_14.csproj|solutionrelative:lab_14\\info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D29BA47-D42C-4EE7-8EEC-9A7EEC857A9A}|lab_14\\lab_14.csproj|c:\\university\\oop\\lab_14\\lab_14\\lab_14\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D29BA47-D42C-4EE7-8EEC-9A7EEC857A9A}|lab_14\\lab_14.csproj|solutionrelative:lab_14\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Info.cs",
+              "DocumentMoniker": "C:\\University\\OOP\\lab_14\\lab_14\\lab_14\\Info.cs",
+              "RelativeDocumentMoniker": "lab_14\\Info.cs",
+              "ToolTip": "C:\\University\\OOP\\lab_14\\lab_14\\lab_14\\Info.cs",
+              "RelativeToolTip": "lab_14\\Info.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAADwv9QAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T21:11:36.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\University\\OOP\\lab_14\\lab_14\\lab_14\\Program.cs",
+              "RelativeDocumentMoniker": "lab_14\\Program.cs",
+              "ToolTip": "C:\\University\\OOP\\lab_14\\lab_14\\lab_14\\Program.cs",
+              "RelativeToolTip": "lab_14\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T19:37:21.272Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
